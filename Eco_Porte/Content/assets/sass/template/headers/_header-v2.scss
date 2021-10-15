@@ -1,0 +1,8 @@
+@include xl {
+  .header-wrapper {
+    &.px-85 {
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
+}

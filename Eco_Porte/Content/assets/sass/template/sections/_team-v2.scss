@@ -1,0 +1,71 @@
+.vs-team-layout2 {
+
+  a {
+    color: inherit;
+  }
+
+  .vs-team-content {
+    position: relative;
+    text-align: center;
+    padding-top: 45px;
+    padding-bottom: 30px;
+  }
+
+  .plus-icon {
+    display: inline-block;
+    @include equal-size(45px);
+    background-color: $theme-color;
+    text-align: center;
+    line-height: 45px;
+    border-radius: 50%;
+    position: absolute;
+    left: 50%;
+    top: -22.5px;
+    margin-left: -22.5px;
+    color: $white-color;
+    margin-top: 0;
+    transition: all ease 0.4s;
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .social-links {
+    position: absolute;
+    left: 0;
+    top: -22.5px;
+    width: 100%;
+    text-align: center;
+    transition: all ease 0.4s;
+    margin-top: 10px;
+    opacity: 0;
+    visibility: hidden;
+
+    a {
+      background-color: $white-color;
+    }
+    
+  }
+
+
+  .vs-team {
+    background-color: $white-color;
+    margin-bottom: 30px;
+
+
+    &:hover {
+      .plus-icon {
+        margin-top: -20px;
+        opacity: 0;
+        visibility: visible;
+      }
+
+      .social-links {
+        opacity: 1;
+        visibility: visible;
+        margin-top: 0;
+      }
+    }
+  }
+
+
+}

@@ -1,0 +1,130 @@
+.vs-about-layout4 {
+  .shape1 {
+    right: 5%;
+    bottom: -200px;
+  }
+}
+
+.vs-about-layout5 {
+  .shape1 {
+    right: 2%;
+    bottom: 2%;
+  }
+}
+
+
+.about-image-box4 {
+  .small-img1 {
+    @include equal-size(160ox);
+    display: inline-block;
+    padding: 9px;
+    background-color: $white-color;
+    position: absolute;
+    right:  -135px;
+    bottom: 125px;
+    z-index: 2;
+    border-radius: 50%;
+
+    img {
+      border-radius: 50%;
+    }
+  }
+
+
+  .experance-box {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+
+    &:before {
+      content: '';
+      position: absolute;
+      z-index: -1;
+      top: -10px;
+      left: -10px;
+      width: 100%;
+      height: 100%;
+      background-color: $white-color;
+      border-radius: 10px;
+    }
+
+    
+    .box-content {
+      padding: 40px;
+      border-radius: 10px;
+    }
+
+    span {
+      line-height: 1;
+    }
+  }
+}
+
+
+@media (max-width: 1800px) {
+  .vs-about-layout5,
+  .vs-about-layout4 {
+    .shape1 {
+      max-width: 250px;
+      bottom: -100px;
+      right: 1%;
+    }
+  }
+  
+  .vs-about-layout5 {
+    .shape1 {
+      bottom: 1%;
+    }
+  }
+  
+}
+
+
+@include lg {
+  .about-image-box4 {
+    &.pb-90 {
+      padding-bottom: 50px;
+    }
+  }
+
+  .about-content-box4 {
+    &.pl-50 {
+      padding-left: 0;
+    }
+  }
+}
+
+
+@include md {
+  .about-image-box4 {
+    &.pb-90 {
+      padding-bottom: 0;
+    }
+    
+    .experance-box {
+      .sec-title-style1 {
+        font-size: 42px;
+      }
+    }
+
+    .big-img {
+      img {
+        width: 100%;
+      }
+    }
+  }
+}
+
+
+@include xs {
+  .about-image-box4 {
+    .experance-box {
+      position: relative;
+      margin-top: 20px;
+      &::before {
+        display: none;
+      }
+    }
+  }
+}

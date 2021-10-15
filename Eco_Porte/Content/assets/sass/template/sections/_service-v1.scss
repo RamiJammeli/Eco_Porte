@@ -1,0 +1,100 @@
+.vs-service-layout1 {
+  a {
+    color: inherit;
+  }
+  
+  .vs-service {
+    text-align: center;
+    position: relative;
+    padding: 0 20px;
+    margin-bottom: 25px;
+    transition: all ease 0.4s;
+  }
+
+  
+  .service-icon {
+    position: relative;
+    padding-bottom: 43px;
+    margin-bottom: 37px;
+
+    [class^="flaticon-"],
+    [class*=" flaticon-"] {
+      line-height: inherit;
+    }
+
+    &:before {
+      content: '';
+      position: absolute;
+      left: 50%;
+      bottom: 0;
+      height: 4px;
+      width: 40px;
+      margin-left: -20px;
+      background-color: $theme-color;
+      border-radius: 10px;
+    }
+
+    .bg-icon {
+      position: absolute;
+      left: 20%;
+      top: 30%;
+      font-size: 100px;
+      z-index: -1;
+      --moving-ani-duration: 15s;
+      opacity: 0.5;
+      line-height: 1;
+    }
+
+    .icon {
+      @include equal-size(100px);
+      display: inline-block;
+      border-radius: 12px;
+      text-align: center;
+      line-height: 100px;
+      box-shadow: 0px 8px 16px 0px rgba(249, 163, 146, 0.2);
+    }
+  }
+
+  .vs-carousel .slick-track >div,
+  .row >div {
+    &:nth-child(even) {
+      .service-icon {
+        .bg-icon {
+          animation-delay: 4s;
+        }
+      }
+    }
+  }
+}
+
+
+@include lg {
+  .vs-service-layout1 {
+    .vs-service {
+      padding: 0;
+    }
+
+    .service-icon {
+      padding-bottom: 33px;
+      margin-bottom: 27px;
+    }
+
+    .service-icon {
+      .bg-icon {
+        left: 20%;
+        top: 60%;
+        font-size: 64px;
+      }
+    }
+  }
+}
+
+@include xs {
+  .vs-service-layout1 {
+    .service-icon {
+      .bg-icon {
+        display: none;
+      }
+    }
+  }
+}

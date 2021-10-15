@@ -1,0 +1,9 @@
+@each $themeColor, $value in $themeColor {
+  .text-#{$themeColor} {
+    color: #{$value} !important;
+  }
+}
+
+.text-inherit {
+  color: inherit;
+}

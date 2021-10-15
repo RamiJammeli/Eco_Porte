@@ -1,0 +1,73 @@
+.header-layout1  {
+  &.position-absolute {
+    right: 0;
+    left: 0;
+    top: 0;
+    z-index: 7;
+
+    @media (min-width: $xl) {
+      padding-left: 150px;
+      padding-right: 150px;
+    }
+  }
+}
+
+.menu-style2 {
+  >ul {
+    >li {
+      margin: 0 10px;
+
+      >a {
+        padding: 40px 0;
+      }
+    }
+  }
+}
+
+@include xl {
+  .menu-style2 {
+    >ul {
+      >li {
+        margin: 0 10px;
+
+        >a {
+          font-size: 14px;
+        }
+      }
+    }
+  }
+
+}
+
+@include ml {
+  .menu-style2 {
+    >ul {
+      >li {
+        margin: 0 8px;
+      }
+    }
+  }
+
+}
+
+
+@include lg {
+  .menu-style2{
+    >ul{
+      >li{
+        >a {
+          padding: 25px 0;
+        }
+      }
+    }
+  }
+}
+
+
+@include md {
+  .header-layout1 {
+    &.position-absolute {
+      position: static !important;
+    }
+  }
+}

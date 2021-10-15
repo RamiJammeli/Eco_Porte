@@ -1,0 +1,76 @@
+.vs-blog-layout3 {
+  .vs-blog {
+    position: relative;
+  }
+  
+  .blog-number {
+    font-size: 28px;
+    font-family: $title-font;
+    position: absolute;
+    right: 30px;
+    top: 30px;
+    z-index: 3;
+    padding: 20px;
+    border-radius: 10px;
+  }
+
+  .blog-content {
+    padding: 27px 30px;
+    padding-bottom: 1px;
+  }
+
+  .blog-title.text-white a:hover {
+    color: $white-color;
+  }
+
+  .blog-meta {
+    padding-bottom: 18px;
+    border-bottom: 1px solid;
+    border-color: $white-color;
+    margin-bottom: 16px;
+    position: relative;
+    z-index: 1;
+
+    &:before {
+      content: '';
+      position: absolute;
+      left: 0;
+      bottom: -1.5px;
+      height: 3px;
+      width: 100%;
+      max-width: 100px;
+      border-top: 3px solid;
+      border-color: inherit;
+    }
+    
+    a.text-white i {
+      color: $white-color;
+    }
+  }
+
+
+}
+
+
+@include xs {
+  .vs-blog-layout3 {
+    .blog-content {
+      padding: 17px 20px;
+      padding-bottom: 0.1px;
+    }
+
+    p:last-child {
+      margin-bottom: 15px;
+    }
+    
+
+    .blog-number {
+      font-size: 28px;
+      right: 15px;
+      top: 15px;
+      padding: 15px;
+      font-size: 22px;
+    }
+
+  }
+}

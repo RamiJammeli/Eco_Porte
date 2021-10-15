@@ -1,0 +1,61 @@
+.vs-blog-layout4 {
+  .vs-blog {
+    position: relative;
+    overflow: hidden;
+  }
+
+  a.overlay {
+    &::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      height: 100%;
+      background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0) 80%);
+      z-index: 1;
+    }
+  }
+
+  .blog-number {
+    position: absolute;
+    right: 0;
+    top: 0;
+    display: inline-block;
+    @include equal-size(60px);
+    line-height: 60px;
+    text-align: center;
+    border-bottom-left-radius: 20px;
+    font-size: 22px;
+    font-family: $title-font;
+    z-index: 3;
+  }
+  
+  .blog-content {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 0 30px;
+    padding-bottom: 17px;
+    z-index: 3;
+  }
+}
+
+
+@include lg {
+  .vs-blog-layout4 {
+    .blog-content {
+      padding: 0 20px;
+      padding-bottom: 7px;
+    }
+  }
+}
+
+
+@include sm {
+  .vs-blog-layout4 .blog-content {
+    right: auto;
+    width: 100%;
+  }
+}

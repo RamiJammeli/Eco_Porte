@@ -1,0 +1,153 @@
+.vs-service-layout2 {
+  .shape1,
+  .shape2 {
+    font-size: 260px;
+    opacity: 0.25;
+    z-index: 1;
+  }
+
+  .shape1 {
+    top: 20%;
+    right: 5%;
+  }
+
+  .shape2 {
+    bottom: 10%;
+    left: 5%;
+    animation-delay: 2s;
+  }
+  
+  .icon-btn {
+    i {
+      line-height: inherit;
+    }
+  }
+  
+  a {
+    color: inherit;
+    &:not(.icon-btn):hover {
+      color: inherit;
+    }
+  }
+
+  .vs-service,
+  .service-btn,
+  .service-icon,
+  .service-text,
+  .service-title {
+    transition: all ease 0.4s;
+  }
+
+  .vs-service {
+    background-color: $white-color;
+    text-align: center;
+    padding: 70px 0;
+    padding-bottom: 40px;
+    border: 2px solid;
+    border-right: none;
+    position: relative;
+    z-index: 2;
+
+    &:hover {
+      background-color: $theme-color;
+      z-index: 3;
+
+      .service-icon,
+      .service-text,
+      .service-title {
+        color: $white-color;
+      }
+
+      .service-btn {
+        bottom: 0;
+        opacity: 1;
+        visibility: visible;
+      }
+    }
+  }
+
+  .service-text {
+    &,
+    &:last-child {
+      max-width: 215px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+
+  .service-icon {
+    color: $theme-color;
+    display: inline-block;
+    margin-bottom: 25px;
+  }
+
+  .service-title {
+    margin-bottom: 17px;
+
+    a {
+      transition: 0s;
+    }
+  }
+
+  .service-btn {
+    @include equal-size(50px);
+    line-height: 50px;
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    margin: 0 0 -25px -25px;
+    opacity: 0;
+    visibility: hidden;
+    border-radius: 0;
+  }
+  
+  
+  
+  @media (min-width: $lg) {
+    .row>div {
+      &:nth-child(n+5) {
+        .vs-service {
+          border-bottom: none;
+        }
+      }
+      
+      &:nth-child(n-5) {
+        .vs-service {
+          border-top: none;
+        }
+      }
+
+      &:nth-child(4n+1) {
+        .vs-service {
+          border-left: none;
+        }
+      }
+    }
+  }
+}
+
+@include xl {
+  .vs-service-layout2 {
+    .shape2,
+    .shape1 {
+      display: none;
+    }
+  }
+
+}
+
+@include lg {
+  .vs-service-layout2 {
+    .vs-service {
+      border-bottom: none;
+    }
+  }
+}
+
+
+@include xs {
+  .vs-service-layout2 .vs-service {
+    padding: 40px 0;
+    padding-bottom: 1px;
+  }
+}

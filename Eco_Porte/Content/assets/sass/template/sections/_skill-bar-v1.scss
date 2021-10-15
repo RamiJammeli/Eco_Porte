@@ -1,0 +1,12 @@
+.vs-skill-bar1 {
+  .vs-progress {
+    height: 10px;
+    width: 100%;
+    background-color: #f7e9e9;
+  }
+
+  .progress-value {
+    height: 100%;
+    background-color: $theme-color;
+  }
+}

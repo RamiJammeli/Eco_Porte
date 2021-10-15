@@ -1,0 +1,94 @@
+.vs-team-layout3 {
+  .vs-team-img {
+    @include equal-size(138px);
+    border-radius: 50%;
+    border: 2px solid $theme-color;
+    overflow: hidden;
+    margin: 0 auto;
+    margin-bottom: 30px;
+
+    img {
+      width: 100%;
+      border-radius: 50%;
+      transition: all ease 0.4s;
+      transform: scale(1);
+    }
+  }
+
+  .social-links {
+    margin-top: 5px;
+    margin-bottom: 18px;
+  }
+
+  .vs-team-degi {
+    color: $theme-color;
+    font-weight: 500;
+  }
+
+  .vs-btn {
+    padding: 5px 25px;
+  }
+  
+  a:not(.vs-btn) {
+    transition: 0s all ease;
+    color: inherit;
+
+    &:hover {
+      color: inherit;
+    }
+  }
+  
+  .vs-team {
+    text-align: center;
+    position: relative;
+    z-index: 1;
+    margin-bottom: 30px;
+    padding-bottom: 30px;
+
+    &:before {
+      content: '';
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      height: 80%;
+      z-index: -1;
+      opacity: 0.10;
+      background-color: $theme-color;
+      transition: all ease 0.4s;
+    }
+
+    &:hover {
+      &::before {
+        opacity: 1;
+      }
+
+      .vs-btn {
+        background-color: $white-color;
+        color: $title-color;
+
+        .vs-btn-shape {
+          background-color: $white-color;
+        }
+      }
+
+      
+      .social-links,
+      .vs-team-name,
+      .vs-team-degi {
+        color: #ffffff;
+      }
+
+      .vs-team-img {
+        img {
+          transform: scale(1.3);
+        }
+      }
+    }
+  }
+
+  
+  
+
+  
+}

@@ -1,0 +1,93 @@
+.vs-service-layout3 {
+
+  [class^="flaticon-"],
+  [class*=" flaticon-"] {
+    line-height: inherit;
+  }
+
+  a {
+    &,
+    &:hover {
+      color: inherit;
+      transition: 0s;
+    }
+  }
+
+  .vs-service,
+  .service-text,
+  .service-title {
+    transition: all ease 0.4s;
+  }
+
+  .service-icon {
+    display: inline-block;
+    @include equal-size(120px);
+    background-color: $white-color;
+    line-height: 110px;
+    margin-bottom: 40px;
+    color: $theme-color;
+    border-radius: 50%;
+  }
+
+  .service-title {
+    margin-bottom: 12px;
+  }
+
+  .service-text {
+    &:last-child, 
+    & {
+      margin-bottom: 0;
+    }
+  }
+
+  .vs-service {
+    text-align: center;
+    border: 1px dashed $theme-color;
+    background-color: $theme-color;
+    padding: 60px 0;
+    padding-bottom: 55px;
+    margin-bottom: 30px;
+
+    &:hover {
+      background-color: $theme-color;
+
+      .service-text,
+      .service-title {
+        color: $white-color;
+      }
+    }
+  }
+
+  .service-text {
+    &,
+    &:last-child {
+      max-width: 225px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+
+  .gutters-10 {
+    .vs-service {
+      margin-bottom: 10px;
+    }
+  }
+}
+
+
+@include sm {
+  .vs-service-layout3 {
+    .vs-service {
+      padding: 25px 10px;
+      padding-bottom: 20px;
+    }
+
+    .service-icon {
+      width: 80px;
+      height: 80px;
+      line-height: 80px;
+      margin-bottom: 15px;
+      font-size: 10px;
+    }
+  }
+}

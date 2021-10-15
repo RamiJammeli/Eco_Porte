@@ -1,0 +1,45 @@
+.vs-error-layout1 {
+  .error-title {
+    font-size: 300px;
+    line-height: 1;
+    margin-bottom: 0;
+  }
+
+  .error-subtitle {
+    font-size: 140px;
+    line-height: 0.9;
+  }
+
+}
+
+@include lg {
+  .vs-error-layout1 {
+    .error-title {
+      font-size: 200px;
+    }
+
+    .error-subtitle {
+      font-size: 82px;
+      margin-bottom: 30px;
+    }
+
+  }
+}
+
+@include sm {
+  .vs-error-layout1 {
+    .error-title {
+      font-size: 62px;
+      line-height: 1;
+      margin-bottom: 20px;
+    }
+    .error-subtitle {
+      font-size: 38px;
+      line-height: 1;
+      margin-bottom: 20px;
+    }
+    .h3 {
+      margin-bottom: 10px;
+    }
+  }
+}

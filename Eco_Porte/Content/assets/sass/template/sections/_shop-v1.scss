@@ -1,0 +1,40 @@
+.vs-product-layout1 {
+  
+  .product-header {
+    width: 320px;
+    margin-right: 30px;
+    position: relative;
+  }
+
+  .product-body {
+    width: calc(100% - 350px);
+    align-self: center;
+  }
+
+  .vs-product {
+    display: flex;
+  }
+
+  
+  
+}
+
+
+@include sm {
+  .vs-product-layout1 {
+    .product-body {
+      padding-top: 25px;
+      width: 100%;
+    }
+
+    .product-header {
+      width: 100%;
+      margin-right: 0;
+
+      img {
+        width: 100%;
+      }
+    }
+    
+  }
+}

@@ -1,0 +1,55 @@
+.product-sort-bar {
+  .nice-select {
+    border: 1px solid $border-color;
+    width: 100%;
+    max-width: 250px;
+    padding-right: 30px;
+    padding-left: 20px;
+
+    &:before {
+      right: 20px !important;
+    }
+  }
+
+  .vs-btn-group {
+    border: 1px solid $border-color;
+    border-right: none;
+    border-radius: 0;
+    margin-right: 0;
+    margin-left: 20px;
+    line-height: 0;
+    display: flex;
+
+    .icon-btn {
+      border-right: 1px solid $border-color;
+      border-radius: 0;
+      font-size: 22px;
+      height: 57px;
+    }
+  }
+}
+
+@include lg {
+  .product-sort-bar {
+    .bar-title {
+      font-size: 16px;
+    }
+  }
+}
+
+
+@include xs {
+  .product-sort-bar {
+    text-align: center;
+    
+    .vs-btn-group {
+      display: inline-block;
+      margin-top: 10px;
+    }
+
+    .nice-select {
+     max-width: 100%;
+     text-align: left;
+    }
+  }
+}

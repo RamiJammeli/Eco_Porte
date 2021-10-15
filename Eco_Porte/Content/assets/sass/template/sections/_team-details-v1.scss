@@ -1,0 +1,46 @@
+@media (min-width: $md) and (max-width: $ml) {
+  .vs-team-details {
+    .vs-team-info {
+      .sec-title-style1 {
+        font-size: 38px;
+      }
+    }
+  }
+}
+
+@include md {
+  .vs-team-details {
+    .pb-60 {
+      padding-bottom: 30px;
+    }
+
+    .mt-50 {
+      margin-top: 20px;
+    }
+
+    .mb-55 {
+      margin-bottom: 25px;
+    }
+
+    .mt-55 {
+      margin-top: 25px;
+    }
+
+    .pt-60 {
+      padding-top: 30px;
+    }
+
+    .mt-60 {
+      margin-top: 30px;
+    }
+
+    .service-layout4.mt-35{
+      margin-top: 10px;
+    }
+
+    .py-60 {
+      padding-top: 30px;
+      padding-bottom: 30px;
+    }
+  }
+}

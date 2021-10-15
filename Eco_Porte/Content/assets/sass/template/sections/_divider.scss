@@ -1,0 +1,37 @@
+.divider-style1 {
+  .divider-icon {
+    @include equal-size(80px);
+    display: inline-block;
+    text-align: center;
+    font-size: 46px;
+    line-height: 80px;
+    color: $white-color;
+    background-color: $theme-color;
+    border-radius: 50%;
+
+
+    &:before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 50%;
+      height: 2px;
+      margin-top: -1px;
+      width: 100%;
+      z-index: -1;
+      background-image: linear-gradient(to right, rgba(255, 255, 255, 0) 0, $theme-color 50% , rgba(255, 255, 255, 0) 100%, );
+    }
+  }
+}
+
+
+@include md {
+  .divider-style1 {
+    .divider-icon {
+      width: 60px;
+      height: 60px;
+      font-size: 36px;
+      line-height: 61px;
+    }
+  }
+}

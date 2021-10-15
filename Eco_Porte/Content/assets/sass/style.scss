@@ -1,0 +1,366 @@
+/*
+Template Name: Mixlax
+Template URL: http://vecurosoft.com/products/html/
+Description: Mixlax- Spa Beauty Salon HTML Template
+Author: Vecuro
+Author URI: https://themeforest.net/user/vecuro
+Version: 1.0
+*/
+/*=================================
+    CSS Index End
+==================================*/
+/*
+01. Variable
+02. Mixin
+03. Function
+04. Typography
+05. Bootstrap Overwrite
+    5.1. Container
+    5.2. Grid
+    5.3. Form
+06. Vendor Custom Style 
+    6.1. Nice Select
+    6.2. Slick Slider 
+    6.3. VS Mobile Menu 
+    6.4. Date & Time Picker
+    6.5. Flaticon
+    6.6. Layer Slider
+07. Theme Default
+    7.1. Preloader
+    7.2. Theme Buttons
+    7.3. Section Title
+    7.4. Theme Utility
+    7.5. Default Box
+08. Template Style
+    8.1. Header
+    8.2. Widget
+    8.3. Footer
+    8.4. Breadcumb
+    8.5. Popup Search
+    8.6. Popup Side Menu
+    8.7. Pagination
+    8.8. Blog
+    8.24. Comments
+    8.25. Hero Area
+    8.26. About
+    8.27. Service
+    8.28. Banner
+    8.29. Divider
+    8.30. Price Plan
+    8.31. Testimonial
+    8.32. Appointment
+    8.33. Feature
+    8.34. Team
+    8.35. Gallery
+    8.36. Brand
+    8.37. Subscribe
+    8.38. Error
+    8.39. Counter
+    8.40. FAQ
+    8.41. Contact
+    8.42. Progress Bar
+    8.43. Related Post
+    8.44. Shop
+    8.45. Cart 
+    8.46. Checkout
+09. Theme Global
+    9.1. Font
+    9.2. Background
+    9.3. Text Color
+    9.4. Border Radius
+    9.5. Overlay
+10. Animation
+11. Extend
+12. Spacing
+
+*/
+
+/*=================================
+    CSS Index End
+==================================*/
+
+
+/*=================================
+    01. Variable
+==================================*/
+@import 'variable/variable';
+
+
+/*=================================
+    02. Mixin
+==================================*/
+@import 'mixin/mixin';
+
+
+/*=================================
+    03. Function
+==================================*/
+@import 'function/function';
+
+
+/*=================================
+    04. Typography
+==================================*/
+@import 'typography/typography';
+
+
+/*=================================
+    05. Bootstrap Overwrite
+==================================*/
+/*------------------- 5.1. Container -------------------*/
+@import 'reset/container';
+
+/*------------------- 5.2. Grid -------------------*/
+@import 'reset/grid';
+
+/*------------------- 5.3. Form -------------------*/
+@import 'reset/form';
+
+
+/*=================================
+    06. Vendor Custom Style
+==================================*/
+/*------------------- 6.1. Nice Select -------------------*/
+@import 'vendor/select-box';
+
+
+/*------------------- 6.2. Slick Slider -------------------*/
+@import 'vendor/slick-slider';
+
+
+/*------------------- 6.3. VS Mobile Menu -------------------*/
+@import 'vendor/vsmenu';
+
+
+/*------------------- 6.4. Date & Time Picker -------------------*/
+@import 'vendor/datetimepicker';
+
+
+/*------------------- 6.5. Flaticon -------------------*/
+@import 'vendor/flaticon';
+
+
+/*------------------- 6.6. Layer Slider -------------------*/
+@import 'vendor/layerslider';
+
+
+
+/*=================================
+    07. Theme Default
+==================================*/
+
+/*------------------- 7.1. Preloader -------------------*/
+@import 'theme-default/preloader';
+
+/*------------------- 7.2. Theme Buttons -------------------*/
+@import 'theme-default/theme-btn';
+
+/*------------------- 7.3. Section Title -------------------*/
+@import 'theme-default/section-title';
+
+/*------------------- 7.4. Theme Utility -------------------*/
+@import 'theme-default/theme-utility';
+
+/*------------------- 7.5. Default Box -------------------*/
+@import 'theme-default/default-box';
+
+
+
+/*=================================
+    08. Template Style
+==================================*/
+
+/*------------------- 8.1. Headers  -------------------*/
+@import 'template/headers/header-default';
+@import 'template/headers/header-sticky';
+@import 'template/headers/header-v1';
+@import 'template/headers/header-v2';
+@import 'template/headers/header-v3';
+
+/*------------------- 8.2. Widgets  -------------------*/
+@import 'template/widgets/widget-sidebar';
+@import 'template/widgets/widget-footer';
+@import 'template/widgets/widget-default-list';
+@import 'template/widgets/widget-search';
+@import 'template/widgets/widget-about-author';
+@import 'template/widgets/widget-tagcloud';
+@import 'template/widgets/widget-recent-post';
+@import 'template/widgets/widget-instagram-feeds';
+@import 'template/widgets/widget-newsletter';
+@import 'template/widgets/widget-shopping-cart';
+@import 'template/widgets/widget_recent_comments';
+@import 'template/widgets/widget-recent-entries';
+@import 'template/widgets/widget-rss';
+@import 'template/widgets/widget-contact';
+@import 'template/widgets/widget-social-links';
+@import 'template/widgets/widget-twitter-feeds';
+@import 'template/widgets/widget-price-filter';
+
+/*------------------- 8.3. Footers  -------------------*/
+@import 'template/footers/footer-v1';
+@import 'template/footers/footer-v2';
+
+
+/*------------------- 8.4. Breadcumb  -------------------*/
+@import 'template/breadcumb/breadcumb-v1';
+
+
+/*------------------- 8.5. Popup Search  -------------------*/
+@import 'template/sections/popupsearch-v1';
+
+/*------------------- 8.6. Popup Side Menu  -------------------*/
+@import 'template/sections/sidemenu-v1';
+
+
+/*------------------- 8.7. Pagination  -------------------*/
+@import 'template/sections/pagination-v1';
+@import 'template/sections/pagination-v2';
+@import 'template/sections/pagination-v3';
+
+/*------------------- 8.8. Blog  -------------------*/
+@import 'template/sections/blog-default';
+@import 'template/sections/blog-v1';
+@import 'template/sections/blog-v2';
+@import 'template/sections/blog-v3';
+@import 'template/sections/blog-v4';
+@import 'template/sections/blog-list-v1';
+@import 'template/sections/blog-details-v1';
+
+/*------------------- 8.24. Comments  -------------------*/
+@import 'template/sections/comments-v1';
+@import 'template/sections/comment-form-v1';
+
+/*------------------- 8.25. Hero Area  -------------------*/
+@import 'template/sections/hero-default';
+
+/*------------------- 8.26. About  -------------------*/
+@import 'template/sections/about-v1';
+@import 'template/sections/about-v2';
+@import 'template/sections/about-v3';
+@import 'template/sections/about-v4';
+@import 'template/sections/about-v5';
+@import 'template/sections/about-v6';
+
+/*------------------- 8.27. Service  -------------------*/
+@import 'template/sections/service-v1';
+@import 'template/sections/service-v2';
+@import 'template/sections/service-v3';
+@import 'template/sections/service-v4';
+@import 'template/sections/service-v5';
+@import 'template/sections/service-details-v1';
+
+/*------------------- 8.28. Banner -------------------*/
+@import 'template/sections/offer-banner';
+
+/*------------------- 8.29. Divider -------------------*/
+@import 'template/sections/divider';
+
+/*------------------- 8.30. Price Plan -------------------*/
+@import 'template/sections/price-v1';
+@import 'template/sections/price-v2';
+
+/*------------------- 8.31. Testimonial -------------------*/
+@import 'template/sections/testimonial-v1';
+@import 'template/sections/testimonial-v2';
+@import 'template/sections/testimonial-v3';
+
+/*------------------- 8.32. Appointment -------------------*/
+@import 'template/sections/appointment-form-v1';
+@import 'template/sections/appointment-form-v2';
+
+/*------------------- 8.33. Feature -------------------*/
+@import 'template/sections/feature-v1';
+@import 'template/sections/feature-v2';
+@import 'template/sections/feature-v3';
+
+/*------------------- 8.34. Team -------------------*/
+@import 'template/sections/team-v1';
+@import 'template/sections/team-v2';
+@import 'template/sections/team-v3';
+@import 'template/sections/team-details-v1';
+
+/*------------------- 8.35. Gallery -------------------*/
+@import 'template/sections/gallery-v1';
+@import 'template/sections/gallery-v2';
+@import 'template/sections/gallery-details-v1';
+
+/*------------------- 8.36. Brand -------------------*/
+@import 'template/sections/brand';
+
+/*------------------- 8.37. Subscribe -------------------*/
+@import 'template/sections/subscribe-v1';
+
+/*------------------- 8.38. Error -------------------*/
+@import 'template/sections/error-v1';
+
+/*------------------- 8.39. Counter -------------------*/
+@import 'template/sections/counter-v1';
+
+/*------------------- 8.40. FAQ -------------------*/
+@import 'template/sections/faq-v1';
+
+/*------------------- 8.41. Contact -------------------*/
+@import 'template/sections/contact-box-v1';
+@import 'template/sections/contact-form-v1';
+
+/*------------------- 8.42. Progress Bar -------------------*/
+@import 'template/sections/skill-bar-v1';
+
+/*------------------- 8.43. Related Post -------------------*/
+@import 'template/sections/related-post-v1';
+
+/*------------------- 8.44. Shop -------------------*/
+@import 'template/sections/shop-sortbar-v1';
+@import 'template/sections/shop-default';
+@import 'template/sections/shop-v1';
+@import 'template/sections/shop-v2';
+@import 'template/sections/shop-details';
+@import 'template/sections/shop-tab-v1';
+
+/*------------------- 8.45. Cart -------------------*/
+@import 'template/sections/cart-v1';
+
+/*------------------- 8.46. Checkout -------------------*/
+@import 'template/sections/checkout';
+
+
+/*=================================
+    09. Theme Global
+==================================*/
+/*------------------- 9.1. Font -------------------*/
+@import 'theme-global/font';
+
+/*------------------- 9.2. Background -------------------*/
+@import 'theme-global/background';
+
+/*------------------- 9.3. Text Color -------------------*/
+@import 'theme-global/text-color';
+
+/*------------------- 9.4. Border Radius -------------------*/
+@import 'theme-global/border-radius';
+
+/*------------------- 9.5. Overlay -------------------*/
+@import 'theme-global/overlay';
+
+
+
+/*=================================
+    10. Theme Animation
+==================================*/
+@import 'animation/animation';
+
+
+
+/*=================================
+    11. Extend
+==================================*/
+@import 'extend/extend';
+
+
+
+
+/*=================================
+    12. Spacing
+==================================*/
+@import 'spacing/section-space';
+@import 'spacing/spacing';

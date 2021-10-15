@@ -1,0 +1,48 @@
+.vs-about-layout3 {
+  &[data-overlay]:before {
+    max-height: 30%;
+  }
+  
+  .shape1 {
+    left: 3%;
+    bottom: 7%;
+  }
+
+  .shape2 {
+    right: 8%;
+    top: 12%;
+    z-index: 2;
+    animation-delay: 2s;
+  }
+}
+
+
+.about-image-box3 {
+  .blur-img {
+    position: absolute;
+    bottom: -20px;
+    z-index: -1;
+    filter: blur(15px);
+    right: 60px;
+    left: 60px;
+  }
+}
+
+
+@media (max-width: 1850px) {
+  .vs-about-layout3 {
+    .shape2,
+    .shape1 {
+      display: none;
+    }
+  }
+}
+
+
+@include md {
+  .about-image-box3 {
+    .blur-img {
+      display: none;
+    }
+  }
+}

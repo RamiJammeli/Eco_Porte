@@ -1,0 +1,95 @@
+.section-title {
+  position: relative;
+  margin-bottom: 75px;
+}
+
+
+.sec-title-style1 {
+  white-space: normal;
+  word-break: break-all;
+
+  @media only screen and (min-width: $lg) {
+    font-size: 60px;
+    margin-top: -10px;
+    margin-bottom: 5px;  
+  }
+  
+  @media (max-width: $lg) and (min-width: $md) {
+    font-size: 48px;
+    margin-top: -9px;
+    margin-bottom: 5px;  
+  }
+
+  .sec-subtitle-style1 {
+    position: relative;
+    top: 7px;
+  }
+}
+
+.sec-subtitle-style1 {
+  font-size: 26px;
+  width: 111px;
+  color: $theme-color;
+  line-height: 1.1;
+  display: inline-block;
+  vertical-align: top;
+  text-align: left;
+  word-break: break-word;
+}
+
+.sec-text-style1 {
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+
+.sec-bg-icon1 {
+  font-size: 140px;
+  position: absolute;
+  top: -30%;
+  left: 38%;
+  z-index: -1;
+  color: $theme-color;
+  opacity: 0.25;
+  line-height: 1;
+}
+
+
+@include lg {
+  .sec-subtitle-style1 {
+    font-size: 18px;
+    max-width: 80px;
+  }
+}
+
+@include md {
+  .sec-title-style1 {
+    margin-top: -5px;
+  }
+
+  .section-title {
+    margin-bottom: 40px;
+  }
+
+  .sec-bg-icon1 {
+    font-size: 96px;
+    top: -20%;
+    left: 43%;
+    opacity: 0.25;
+  }
+
+  .section-title .sec-title-style1 {
+    margin-bottom: 5px;
+  }
+
+
+  .sec-title-style1 .sec-subtitle-style1 {
+    top: 0;
+  }
+}
+
+@include xs {
+  .sec-subtitle-style1 {
+    font-size: 16px;
+  }
+}

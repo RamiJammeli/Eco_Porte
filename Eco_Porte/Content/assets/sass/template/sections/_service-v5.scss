@@ -1,0 +1,79 @@
+.vs-service-layout5 {
+  position: relative;
+
+  .shape1 {
+    left: 10%;
+    top: -80px;
+    z-index: 3;
+  }
+  
+  
+  .vs-service {
+    padding: 60px 50px 20px 50px;
+    text-align: center;
+    margin-bottom: 30px;
+    transition: all ease 0.4s;
+  }
+
+  .service-img {
+    width: 100%;
+    max-width: 200px;
+    margin: 0 auto;
+    margin-bottom: 25px;
+    position: relative;
+  }
+
+  .service-icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+    font-size: 28px;
+    background-color: $theme-color;
+    color: $white-color;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    border-radius: 50%;
+    margin: -25px -25px 0 0;
+  }
+
+  a:hover,
+  a {
+    color: inherit;
+    transition: 0s;
+  }
+
+  .service-icon,
+  .service-text,
+  .service-title {
+    transition: all ease 0.3s;
+  }
+
+  .vs-service:hover,
+  .slick-center .vs-service {
+    background-color: $theme-color;
+
+    .service-icon {
+      background-color: $white-color;
+      color: $title-color;
+    }
+    .service-text,
+    .service-title {
+      color: $white-color;
+    }
+  }
+
+  
+}
+
+
+
+@include lg {
+  .vs-service-layout5 {
+    .vs-service {
+      padding: 60px 30px 10px 30px;
+      text-align: center;
+      margin-bottom: 30px;
+    }
+  }
+}

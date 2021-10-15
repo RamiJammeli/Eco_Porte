@@ -1,0 +1,125 @@
+.vs-features-layout2 {
+  .shape1 {
+    right: 2%;
+    top: 0;
+  }
+
+  .vs-feature-content {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -30px;
+    z-index: 1;
+    padding: 30px;
+    padding-bottom: 25px;
+    padding-top: 140px;
+    opacity: 0;
+    visibility: hidden;
+    transition: all ease 0.4s;
+
+    p {
+      margin-bottom: 0;
+    }
+
+    &:before {
+      content: '';
+      position: absolute;
+      z-index: -1;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      height: 100%;
+      background-image: linear-gradient(to top, rgba(0, 0, 0, 0.85) 40%, rgba(0, 0, 0, 0) 100%);
+    }
+  }
+
+  .vs-price-box1 {
+    position: absolute;
+    top: 0;
+    right: 30px;
+    opacity: 0;
+    visibility: hidden;
+  }
+
+  .vs-feature {
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    
+    &:hover {
+      .vs-feature-content {
+        opacity: 1;
+        visibility: visible;
+        bottom: 0;
+      }
+      
+      .vs-price-box1 {
+        opacity: 1;
+        visibility: visible;
+        top: 30px;
+      }
+    }
+  }
+
+
+}
+
+.vs-price-box1 {
+  background-color: $theme-color;
+  width: 105px;
+  height: 105px;
+  text-align: center;
+  padding: 0 25px;
+  padding-top: 10px;
+  border-radius: 50%;
+  transition: all ease-in-out 0.3s;
+
+  &:before {
+    content: '';
+    position: absolute;
+    left: -5px;
+    bottom: -5px;
+    right: -5px;
+    top: -5px;
+    border: 2px dashed $white-color;
+    border-radius: 50%;
+  }
+
+  .text {
+    font-size: 14px;
+    font-weight: 500;
+    color: $white-color;
+  }
+
+  .price {
+    display: block;
+    color: $white-color;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 32px;
+    margin: 5px 0;
+
+    sup {
+      font-weight: 500;
+    }
+  }
+
+  .sub {
+    font-size: 15px;
+    font-weight: 400;
+    display: block;
+    text-align: right;
+    color: $white-color;
+    position: relative;
+    top: -8px;
+  }
+}
+
+
+@media (max-width: 1800px) {
+  .vs-features-layout2 {
+    .shape1 {
+      display: none;
+    }
+  }
+}

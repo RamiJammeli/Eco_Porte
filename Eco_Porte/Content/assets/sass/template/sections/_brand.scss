@@ -1,0 +1,24 @@
+@include xl {
+  .vs-brand-wrapper {
+    &.px-180 {
+      padding-left: 0;
+      padding-right: 0;
+    }
+
+    &.pl-150 {
+      padding-left: 0;
+    }
+
+    &.pr-150 {
+      padding-right: 0;
+    }
+  }
+}
+
+
+@include lg {
+  .vs-features-layout1 .shape5,
+  .vs-features-layout1 .shape4 {
+    margin-top: -500px;
+  }
+}

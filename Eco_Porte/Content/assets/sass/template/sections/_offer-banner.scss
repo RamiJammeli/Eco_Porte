@@ -1,0 +1,154 @@
+.offer-banner-style2,
+.offer-banner-style1 {
+  position: relative;
+
+  .banner-content {
+    position: absolute;
+    width: 100%;
+    max-width: 300px;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  .vs-btn {
+    padding: 12px 36px;
+    border: none;
+  }
+}
+
+.offer-banner-style2 {
+  .banner-content {
+    right: auto;
+    left: 10%;
+  }
+}
+
+
+.offer-banner-style3.bg-light-success {
+  background-color: #edfffa;
+
+  .vs-btn {
+    background-color: #35bf96;
+  }
+  
+  .offer-per sup,
+  .offer-per sub {
+    color: #35bf96;
+  }
+}
+
+.offer-banner-style3 {
+  .offer-per,
+  .offer-title {
+    font-size: 100px;
+    font-family: $title-font;
+    position: relative;
+    line-height: 1;
+  }
+
+  .offer-title  {
+    font-style: italic;
+    font-weight: 500;
+    margin-bottom: 50px;
+    letter-spacing: -1.8px;
+  }
+
+  .offer-per {
+    display: inline-block;
+    padding-right: 0.5em;
+
+    sub,
+    sup {
+      font-size: 0.3em;
+      line-height: 32px;
+      top: 0;
+      position: absolute;
+      right: 0;
+      color: $theme-color;
+    }
+    
+    sub {
+      top: auto;
+      bottom: 0.1em;
+      line-height: 1;
+      font-size: 0.57em;
+    }
+  }
+
+  .vs-btn {
+    padding: 15px 40px;
+    border: none;
+  }
+
+  .offer-icon {
+    margin-bottom: 40px;
+  }
+
+
+}
+
+
+@include xl {
+  .offer-banner-style3 {
+    .offer-per,
+    .offer-title {
+      font-size: 42px;
+    }
+
+    .offer-title {
+      margin-bottom: 25px;
+    }
+
+    .offer-icon {
+      margin-bottom: 20px;
+    }
+
+    .offer-per {
+      margin-bottom: 10px !important;
+
+      sup {
+        top: -10px;
+      }
+    }
+  }
+}
+
+
+
+
+
+@include lg {
+  .offer-banner-style2,
+  .offer-banner-style1 {
+
+    .banner-content {
+      max-width: 250px;
+    }
+
+    .banner-title {
+      font-size: 28px;
+    }
+  }
+
+  .offer-banner-style3 {
+    .offer-icon {
+      max-width: 70px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+
+}
+
+
+@include xs {
+  .offer-banner-style1 .banner-content {
+    transform: translateY(-50%) scale(0.6);
+    transform-origin: right;
+  }
+  .offer-banner-style2 .banner-content {
+    transform: translateY(-50%) scale(0.6);
+    transform-origin: left;
+  }
+}

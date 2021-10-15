@@ -1,0 +1,85 @@
+.vs-contact-box1 {
+  border: 2px solid $border-color;
+  padding: 70px 0;
+  position: relative;
+  transition: all ease 0.4s;
+  background-color: $white-color;
+  
+  .contact-img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    visibility: hidden;
+    transition: all ease 0.4s;
+  }
+
+  >*:not(.contact-img) {
+    position: relative;
+    z-index: 2;
+    transition: all ease 0.4s;
+  }
+
+  .vs-style1 {
+    padding: 15px 35px;
+  }
+
+  p {
+    max-width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+
+  }
+
+  
+  
+}
+
+
+.slick-center .vs-contact-box1,
+.vs-contact-box1:hover {
+  border-color: rgba($color: #000000, $alpha: 0.70);
+
+  .contact-img {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  >* {
+    color: $white-color;
+  }
+}
+
+
+.vs-contactinfo-wrapper .contact-map {
+  width: calc(100% - 200px);
+  height: 700px;
+  margin-bottom: -60px;
+  margin-left: 100px;
+  margin-right: 100px;
+}
+
+@include xl {
+  .vs-contactinfo-wrapper .contact-map {
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  
+}
+
+
+@include lg {
+  .vs-contactinfo-wrapper .contact-map {
+    margin-bottom: 60px;
+    height: 400px;
+  }
+
+  .vs-contact-box1 {
+    padding: 40px 0;
+  }
+}
+
+

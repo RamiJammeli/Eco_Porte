@@ -1,0 +1,68 @@
+.vs-hero-wrapper {
+  .vs-btn {
+    line-height: inherit;
+    padding: inherit;
+    padding-top: 0;
+    padding-bottom: 0;
+    font-size: inherit;
+    width: 100%;
+    height: 100%;
+    box-shadow: none !important;
+
+    .vs-btn-icon {
+      width: 29%;
+      margin-left: 16%;
+      height: calc(100% - 0.7vw);
+      font-size: 140%;
+      line-height: 0.8;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+
+      i {
+        &:before {
+          position: relative;
+          top: -2%;
+        }
+      }
+    }
+  }
+}
+
+
+.hero-box1 {
+  @media(min-width: $md) {
+    &:before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: -18px;
+      @include equal-size(18px);
+      border-top: 10px solid $theme-color;
+      border-left: 10px solid transparent;
+      border-right: 10px solid $theme-color;
+      border-bottom: 10px solid transparent;
+    }
+  }
+}
+
+
+.vs-hero-wrapper {
+  position: relative;
+  z-index: 1;
+}
+
+@include xl {
+  .vs-hero-wrapper {
+    &.mx-100 {
+      margin-right: 0;
+      margin-left: 0;
+    }
+  }
+}
+
+@include md {
+  .ls-container .ls-layers .ls-none-md {
+    display: none !important;
+  }
+}

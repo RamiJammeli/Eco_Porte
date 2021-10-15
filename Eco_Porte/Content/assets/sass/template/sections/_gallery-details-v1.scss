@@ -1,0 +1,102 @@
+.vs-gallery-details {
+  .gallery-top-bar {
+    margin-bottom: -80px;
+    position: relative;
+    z-index: 1;
+  }
+}
+
+
+@include lg {
+  .vs-gallery-details {
+    .gallery-top-bar {
+      margin-bottom: -60px;
+
+      &.px-60 {
+        padding-left: 30px;
+        padding-right: 30px;
+      }
+
+      &.py-40 {
+        padding-top: 20px;
+        padding-bottom: 20px;
+      }
+      
+    }
+
+    .h4 {
+      font-size: 18px;
+    }
+
+  }
+}
+
+
+@include md {
+  .vs-gallery-details {
+    .gallery-top-bar {
+      margin-left: 0;
+      margin-right: 0;
+      margin-bottom: 30px;
+
+      &.px-60 {
+        padding-left: 15px;
+        padding-right: 15px;
+      }
+
+      &.py-40 {
+        padding-top: 15px;
+        padding-bottom: 15px;
+      }
+      
+    }
+
+    .h4 {
+      font-size: 16px;
+    }
+
+    span {
+      font-size: 14px;
+    }
+
+    .py-60 {
+      padding-top: 30px;
+      padding-bottom: 30px;
+    }
+
+    .my-55 {
+      margin-top: 25px;
+      margin-bottom: 25px;
+    }
+
+    .mt-55 {
+      margin-top: 25px;
+    }
+
+    .mb-60 {
+      margin-bottom: 30px;
+    }
+
+    .pt-60 {
+      padding-top: 30px;
+    }
+
+    .mt-60 {
+      margin-top: 30px;
+    }
+
+    
+
+  }
+}
+
+@include sm {
+  .vs-gallery-details{
+    .gallery-top-bar {
+      text-align: center;
+      .bar-content {
+        margin-bottom: 10px;
+      }
+    }
+  }
+}

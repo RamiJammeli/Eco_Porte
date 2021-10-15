@@ -1,0 +1,65 @@
+.vs-faq-layout1 {
+  .vs-faq-title {
+    border: none;
+    background-color: transparent;
+    font-family: $title-font;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 27px 25px;
+    padding-left: 110px;
+    display: block;
+    width: 100%;
+    text-align: left;
+    position: relative;
+
+    &:before {
+      content: '\f068';
+      font-family: $icon-font;
+      font-weight: 300;
+      position: absolute;
+      left: 30px;
+      top: 21%;
+      @include equal-size(50px);
+      line-height: 49px;
+      background-color: $white-color;
+      border-radius: 50%;
+      text-align: center;
+    }
+    
+    &.collapsed:before {
+      content: '\f067';
+    }
+  }
+
+  .vs-faq-body {
+    padding: 0px 30px 25px 30px;
+  }
+  
+  .vs-faq {
+    margin-bottom: 20px;
+    
+  }
+}
+
+
+@include xs {
+  .vs-faq-layout1 {
+    .vs-faq-title {
+      padding: 15px;
+      padding-left: 50px;
+      font-size: 16px;
+      
+      &::before {
+        @include equal-size(30px);
+        line-height: 29px;
+        left: 10px;
+        top: 16%;
+        font-size: 12px;
+      }
+    }
+    
+    .vs-faq-body {
+      padding: 0px 15px 10px 15px;
+    }
+  }
+}

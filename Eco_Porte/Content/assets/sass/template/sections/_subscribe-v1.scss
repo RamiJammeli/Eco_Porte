@@ -1,0 +1,43 @@
+.subscribe-form-style1 {
+  .vs-btn {
+    width: 180px;
+    padding: 0;
+    height: 60px;
+  }
+
+  input {
+    width: calc(100% - 180px);
+    height: 60px;
+    border: none;
+    margin: 0;
+    padding-right: 20px;
+  }
+}
+
+.vs-subscribe-layout1 {
+  .shape1 {
+    right: 0;
+    bottom: 2%;
+    max-width: 300px;
+    animation-delay: 2s;
+  }
+}
+
+
+@media (max-width: 1800px) {
+  .vs-subscribe-layout1 {
+    .shape1 {
+      display: none;
+    }
+  }
+}
+
+@include xs {
+  .subscribe-form-style1 {
+    input {
+      width: 100%;
+      border: 1px solid $border-color;
+      margin-bottom: 10px;
+    }
+  }
+}

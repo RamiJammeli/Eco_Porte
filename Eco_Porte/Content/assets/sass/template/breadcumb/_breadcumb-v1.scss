@@ -1,0 +1,54 @@
+.breadcumb-menu-style1 {
+  max-width: 100%;
+  width: fit-content;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  margin-bottom: 5px;
+
+  li {
+    display: inline-block;
+    margin: 0 6px;
+    list-style: none;
+
+    &:first-child {
+      margin-left: 0;
+    }
+
+    &:last-child {
+      margin-right: 0;
+
+      &:after {
+        display: none;
+      }
+    }
+
+    &:after {
+      content: '|';
+      position: relative;
+      right: -7px;
+      float: right;
+    }
+  }
+
+  li,
+  a,
+  span {
+    white-space: normal;
+    word-break: break-all;
+    
+    i {
+      margin-right: 5px;
+    }
+  }
+}
+
+@include xl {
+  .breadcumb-layout1 {
+    &.mx-100 {
+      margin-left: 0;
+      margin-right: 0;
+
+    }
+  }
+}

@@ -1,0 +1,61 @@
+.vs-testimonial-layout3 {
+  .vs-testimonial {
+    position: relative;
+    padding: 0 40px;
+    padding-top: 65px;
+    padding-bottom: 30px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    margin-top: 40px;
+    box-shadow: 0 -10px 20px 0 rgba(0,0,0,0.05);
+  }
+  
+  .author-img {
+    @include equal-size(80px);
+    position: absolute;
+    top: -40px;
+
+    img {
+      width: 100%;
+      border-radius: 50%;
+    }
+  }
+
+  .icon-quote {
+    font-size: 60px;
+    line-height: 1;
+    margin-top: -30px;
+    position: absolute;
+    right: 40px;
+    top: 0;
+    color: $theme-color;
+  }
+
+  .rating {
+    color: $yellow-color;
+    margin-bottom: 10px;
+  }
+
+  .degi {
+    font-weight: 500;
+  }
+
+
+}
+
+
+@include xs {
+  .vs-testimonial-layout3 {
+    .vs-testimonial {
+      padding: 0 20px;
+      padding-top: 60px;
+      padding-bottom: 15px;
+    }
+
+    .icon-quote {
+      font-size: 44px;
+      margin-top: -25px;
+      right: 20px;
+    }
+  }
+}

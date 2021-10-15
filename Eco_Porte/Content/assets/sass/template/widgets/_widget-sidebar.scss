@@ -1,0 +1,20 @@
+.widget {
+  padding: 40px;
+  margin-bottom: 30px;
+}
+
+
+.widget_title {
+  font-size: 20px;  
+  border-left: 2px solid $theme-color;
+  line-height: 1em;
+  padding-left: 20px;
+  margin-bottom: 30px;
+}
+
+
+@include lg {
+  .widget {
+    padding: 30px 20px;
+  }
+}

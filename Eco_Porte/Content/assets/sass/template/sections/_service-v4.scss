@@ -1,0 +1,28 @@
+.service-layout4 {
+  .vs-service {
+    border-width: 1px;
+    border-style: solid;
+    text-align: center;
+    padding: 55px 15px;
+  }
+
+  .service-text {
+    &,
+    &:last-child {
+      width: 100%;
+      max-width: 270px;
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 0;
+    }
+  }
+}
+
+
+@include md {
+  .service-layout4 {
+    .vs-service {
+      padding: 30px 10px;
+    }
+  }
+}

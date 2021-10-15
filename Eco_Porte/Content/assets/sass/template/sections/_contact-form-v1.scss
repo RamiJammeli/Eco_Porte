@@ -1,0 +1,17 @@
+@include md {
+  .contact-form-layout1 {
+    .inner-wrapper.px-100 {
+      padding-left: 30px;
+      padding-right: 30px;
+    }
+  }
+}
+
+@include md {
+  .contact-form-layout1 {
+    .inner-wrapper.px-100 {
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+  }
+}

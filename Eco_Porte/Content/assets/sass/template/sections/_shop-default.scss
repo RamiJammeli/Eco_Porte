@@ -1,0 +1,97 @@
+
+.vs-product-wrapper {
+  .discount {
+    display: inline-block;
+    line-height: 1;
+    padding: 7px 10px;
+    font-size: 14px;
+    z-index: 9;
+    border-radius: 3px;
+    position: absolute;
+    left: 20px;
+    top: 20px;
+    color: $white-color;
+    background-color: $theme-color;
+    font-weight: 700;
+  }
+
+  .action-buttons {
+    display: flex;
+  }
+
+  .vs-product {
+    margin-bottom: 30px;
+    position: relative;
+
+    .action-buttons {
+      .vs-btn,
+      .icon-btn {
+        height: 50px;
+        padding: 0;
+        width: 150px;
+        line-height: 48px;
+        text-align: center;
+        border-radius: 0;
+        margin-right: 10px;
+
+        &:last-child {
+          margin-right: 0;
+        }
+      }
+
+      .icon-btn {
+        width: 50px;
+
+        i {
+          line-height: inherit;
+        }
+      }
+    }
+  }
+
+  .slick-slide {
+    position: relative;
+  }
+
+  .slick-arrow {
+    left: 20px;
+    width: 40px;
+    height: 40px;
+    z-index: 5;
+    border: none;
+    background-color: $white-color;
+    font-size: 14px;
+    color: $body-color;
+
+    &:hover {
+      color: $white-color;
+      background-color: $theme-color;
+    }
+
+    &.slick-next {
+      right: 20px;
+      left: auto;
+    }
+  }
+
+  .slick-dots {
+    bottom: 15px;
+  }
+
+
+}
+
+
+@include lg {
+  .vs-product-wrapper {
+    .vs-product {
+      display: block;
+
+      .action-buttons {
+        .vs-btn {
+          width: 120px;
+        }
+      }
+    }
+  }
+}

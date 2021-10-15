@@ -1,0 +1,35 @@
+.vs-appointment-layout1 {
+  .shape1 {
+    right: 2%;
+    top: 10%;
+    z-index: 1;
+  }
+  .shape2 {
+    left: 2%;
+    bottom: 10%;
+    animation-delay: 3s;
+    z-index: 1;
+  }
+}
+
+
+@media(max-width: 1820px) {
+  .vs-appointment-layout1 {
+    .shape1,
+    .shape2 {
+      display: none;
+    }
+  }
+}
+
+@include md {
+  .appointment-form-style1.px-60.py-70 {
+    padding: 20px;
+  }
+}
+
+@include xs {
+  .appointment-form-style1.px-60.py-70 {
+    padding: 15px;
+  }
+}

@@ -1,0 +1,60 @@
+.vs-features-layout3 {
+  .feature-img {
+    @include equal-size(160px);
+    position: relative;
+    margin: 0 auto;
+    margin-bottom: 35px;
+
+    i {
+      display: inline-block;
+      @include equal-size(40px);
+      line-height: 39px;
+      text-align: center;
+      background-color: $theme-color;
+      color: $white-color;
+      position: absolute;
+      right: -15px;
+      top: -15px;
+      border-radius: 50%;
+    }
+  }
+
+  .feature-text {
+    font-size: 18px;
+    max-width: 275px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  strong,
+  .feature-img i,
+  .vs-feature,
+  .feature-text,
+  .feature-title {
+    transition: all ease 0.4s;
+  }
+
+  .vs-feature {
+    text-align: center;
+    padding: 60px 15px;
+    margin-bottom: 30px;
+  }
+
+
+  .slick-center .vs-feature,
+  .vs-feature:hover {
+    background-color: $theme-color;
+
+    .feature-img i,
+    .vs-btn {
+      background-color: $white-color;
+      color: $body-color;
+    }
+
+    strong,
+    .feature-text,
+    .feature-title {
+      color: $white-color;
+    }
+  }
+}

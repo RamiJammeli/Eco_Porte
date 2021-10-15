@@ -1,0 +1,17 @@
+
+.about-content-box5 {
+  >div {
+    max-width: 550px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media (min-width: $lg) and (max-width: $xl) {
+  .about-content-box5 {
+    &.space {
+      padding-top: 40px;
+      padding-bottom: 40px;
+    }
+  }
+}

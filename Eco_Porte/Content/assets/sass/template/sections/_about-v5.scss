@@ -1,0 +1,48 @@
+.about-image-box5 {
+  .ripple {
+    &:after ,
+    &:before {
+      content: '';
+      @include equal-size(300px);
+      margin: -150px 0 0 -150px;
+      display: inline-block;
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      z-index: -1;
+      border: 2px solid $theme-color;
+      opacity: 0;
+      border-radius: 50%;
+      @extend .ripple-animation;
+    }
+
+    &:after {
+      animation-delay: 3s;
+    }
+  }
+}
+
+
+@include lg {
+  .vs-about-layout6 {
+    .skill-area {
+      padding: 40px;
+      padding-bottom: 10px;
+    }
+  }
+}
+
+
+@include lg {
+  .vs-about-layout6 {
+    .skill-area {
+      padding: 20px;
+      padding-bottom: 5px;
+    }
+
+    .vs-skill-bar1 {
+      margin-bottom: 20px;
+    }
+    
+  }
+}

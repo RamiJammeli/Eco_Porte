@@ -1,0 +1,23 @@
+.comment-form-style1 {
+  padding: 40px;
+
+  textarea:focus,
+  input:focus,
+  textarea,
+  input {
+    border: none;
+  }
+  
+  textarea.form-control {
+    min-height: 150px;
+  }
+
+  
+}
+
+
+@include md {
+  .comment-form-style1 {
+    padding: 20px;
+  }
+}

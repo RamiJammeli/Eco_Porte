@@ -1,0 +1,19 @@
+@include xs {
+  .pagination-layout3 {
+    a {
+      font-size: 12px;
+    }
+    
+    .pagi-title {
+      font-size: 14px;
+
+      a {
+        font-size: inherit;
+      }
+    }
+
+    .fa-3x {
+      font-size: 2em;
+    }
+  }
+}

@@ -1,0 +1,98 @@
+.preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 999999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-color: $body-color;
+
+  .vs-btn.vs-style1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    border-radius: 0;
+    padding: 5px 20px;
+    font-size: 16px;
+    border: none;
+  }
+
+  .preloader-box {
+    position: relative;
+    padding-left: 5px;
+    display: flex;
+    justify-content: center;
+    perspective: 200px;
+    margin-top: 30px;
+  }
+
+
+  .letter {
+    animation: movement 600ms ease var(--i) infinite alternate;
+    position: relative;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    float: left;
+    text-align: center;
+    font-size: 20px;
+    color: $white-color;
+    background: $theme-color;
+    margin-right: -1px;
+
+    @include xs {
+      width: 30px;
+      height: 30px;
+      line-height: 30px;
+    }
+    
+    &:nth-child(1) {
+      --i: 0ms;
+    }
+
+    &:nth-child(2) {
+      --i: 75ms;
+    }
+
+    &:nth-child(3) {
+      --i: 150ms;
+    }
+
+    &:nth-child(4) {
+      --i: 225ms;
+    }
+
+    &:nth-child(5) {
+      --i: 300ms;
+    }
+
+    &:nth-child(6) {
+      --i: 375ms;
+    }
+
+    &:nth-child(7) {
+      --i: 450ms;
+    }
+
+    &:nth-child(8) {
+      --i: 525ms;
+    }
+  }
+}
+
+
+@keyframes movement {
+  from {
+    transform: scale(0.6) translateY(0px) rotateX(0deg);
+  }
+
+  to {
+    transform: scale(1) translateY(-15px) rotateX(15deg);
+    background: $theme-color;
+  }
+}

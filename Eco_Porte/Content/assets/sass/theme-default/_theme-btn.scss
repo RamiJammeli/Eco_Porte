@@ -1,0 +1,368 @@
+.vs-btn {
+  position: relative;
+  overflow: hidden;
+  font-size: 14px;
+  font-weight: 700;
+  border: none;
+  text-transform: capitalize;
+  display: inline-block;
+  background-color: $white-color;
+  color: $body-color;
+  vertical-align: middle;
+  z-index: 2;
+
+  &,
+  .vs-btn-icon {
+    transition: all ease 0.4s;
+    transition-delay: calc((var(--n) - 1) * 0.1s);
+  }
+
+  .vs-btn-icon,
+  .vs-btn-text {
+    z-index: 3;
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+  .vs-btn-shape {
+    display: inline-block;
+    position: absolute;
+    width: 25%;
+    height: 100%;
+    background-color: $theme-color;
+    transform: translateY(150%);
+    border-radius: 50%;
+    left: calc((var(--n) - 1) * 25%);
+    transition: 0.5s;
+    transition-delay: calc((var(--n) - 1) * 0.1s);
+    z-index: 1;
+
+    &:nth-child(1) {
+      --n: 1;
+    }
+
+    &:nth-child(2) {
+      --n: 2;
+    }
+
+    &:nth-child(3) {
+      --n: 3;
+    }
+
+    &:nth-child(4) {
+      --n: 4;
+    }
+  }
+
+
+  &:hover {
+    .vs-btn-shape {
+      transform: translateY(0) scale(2);
+    }
+  }
+
+
+  &[class*="wave"] {
+    padding: 7px;
+    padding-left: 40px;
+
+    .vs-btn-icon {
+      @include equal-size(56px);
+      line-height: 56px;
+      text-align: center;
+      background-color: $theme-color;
+      color: $white-color;
+      margin-left: 27px;
+      font-size: 16px;
+      --n: 5;
+    }
+  }
+
+
+  &.wave-style1 {
+    .vs-btn-icon {
+      background-color: $theme-color;
+      color: $white-color;
+    }
+
+    &:hover {
+      color: $white-color;
+      --n: 2;
+
+      .vs-btn-icon {
+        background-color: $white-color;
+        color: $theme-color;
+      }
+    }
+  }
+
+  &.wave-style2 {
+    background-color: $theme-color;
+    color: $white-color;
+
+    .vs-btn-shape {
+      background-color: $white-color;
+    }
+
+    .vs-btn-icon {
+      background-color: $white-color;
+      color: $theme-color;
+    }
+
+    &:hover {
+      color: $body-color;
+      --n: 2;
+
+      .vs-btn-icon {
+        background-color: $theme-color;
+        color: $white-color;
+      }
+    }
+  }
+
+
+  &[class*="outline"] {
+    background-color: transparent;
+    text-align: center;
+    display: inline-block;
+    padding: 20px 45px;
+    border: 2px solid #e4e4e4;
+    color: $body-color;
+    --n: 1;
+
+    .vs-btn-icon {
+      --n: 0;
+      margin-right: 7px;
+      font-size: 0.9rem;
+    }
+
+    &:hover {
+      color: $white-color;
+      border-color: $theme-color;
+    }
+  }
+
+  &.outline-style2 {
+    border-color: $white-color;
+    color: $white-color;
+  }
+
+  &.vs-style2,
+  &.vs-style1 {
+    padding: 16.5px 34px;
+    background-color: $theme-color;
+    color: $white-color;
+    font-weight: 500;
+    border: 1px solid transparent;
+    --n: 1;
+
+    .vs-btn-icon {
+       --n: 0;
+      margin-right: 10px;
+    }
+
+    .vs-btn-shape {
+      background-color: $white-color;
+    }
+
+    &:hover {
+      border-color: $theme-color;
+      color: $body-color;
+    }
+  }
+
+  &.vs-style2 {
+    color: $body-color;
+    background-color: $white-color;
+    border: none;
+
+    .vs-btn-shape {
+      background-color: $theme-color;
+    }
+
+    &:hover {
+      color: $white-color;
+    }
+  }
+
+}
+
+
+
+.icon-btn {
+  @include equal-size(60px);
+  line-height: 60px;
+  display: inline-block;
+  text-align: center;
+  border: 1px solid transparent;
+  border-radius: 50%;
+  background-color: $white-color;
+
+  .fa,
+  .fab,
+  .fad,
+  .fal,
+  .far,
+  .fas {
+    line-height: 55px;
+  }
+
+  &:hover {
+    color: $white-color !important;
+    background-color: $theme-color;
+    border-color: transparent;
+  }
+
+  &.bg-theme {
+    color: $white-color;
+
+    &:hover {
+      background-color: $white-color !important;
+      color: $theme-color !important;
+      border-color: $theme-color;
+    }
+  }
+}
+
+.dark-style {
+  .icon-btn:hover {
+    color: #fff;
+  }
+}
+
+// Play Button
+.play-btn {
+  position: relative;
+  border-radius: 50%;
+  display: inline-block;
+
+  >i {
+    position: relative;
+    z-index: 2;
+    display: inline-block;
+    @include equal-size(120px);
+    line-height: 120px;
+    text-align: center;
+    font-size: 26px;
+    border-radius: inherit;
+    transition: all ease 0.4s;
+  }
+
+  .fa-play {
+    padding-left: 3px;
+  }
+
+  &:after,
+  &:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    @include equal-size(100%);
+    border-radius: inherit;
+    background-color: $theme-color;
+    @extend .ripple-animation;
+    z-index: 1;
+  }
+
+  &:after {
+    animation-delay: 1s;
+  }
+
+  &:hover>i,
+  &.style-white>i {
+    background-color: $white-color;
+    color: $body-color;
+  }
+
+  >i,
+  &.style-white:hover>i {
+    color: $white-color;
+    background-color: $theme-color;
+  }
+
+  &.md-size {
+    >i {
+      @include equal-size(80px);
+      line-height: 80px;
+    }
+  }
+
+}
+
+// Link Button
+.link-btn {
+  font-weight: 700;
+  display: inline-block;
+  line-height: 0.8;
+
+  i {
+    margin-left: 5px;
+  }
+}
+
+
+
+
+// Scroll To Top
+.scrollToTop {
+  position: fixed;
+  bottom: 100px;
+  right: 30px;
+  z-index: 94;
+  opacity: 0;
+  visibility: hidden;
+  font-size: 18px;
+  color: $white-color !important;
+  transition: all ease 0.8s;
+
+  i {
+    line-height: inherit !important;
+  }
+
+  &.show {
+    bottom: 30px;
+    opacity: 1;
+    visibility: visible;
+  }
+
+  @include sm {
+    @include equal-size(40px);
+    line-height: 40px;
+    right: 15px;
+    bottom: 50px;
+
+    &.show {
+      bottom: 15px;
+    }
+  }
+}
+
+
+
+@include md {
+  .play-btn>i {
+    width: 100px;
+    height: 100px;
+    line-height: 100px;
+    font-size: 26px;
+  }
+}
+
+
+@include xs {
+  .vs-btn-group {
+    display: grid;
+    justify-content: center;
+
+    .vs-btn {
+      margin-bottom: 20px;
+      margin-right: 0;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+}

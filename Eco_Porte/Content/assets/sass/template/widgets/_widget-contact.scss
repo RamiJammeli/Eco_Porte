@@ -1,0 +1,20 @@
+.contact-widget-style2 {
+  box-shadow: 0px 8px 16px 0px rgba(249, 163, 146, 0.1);
+  text-align: center;
+  padding: 40px 60px;
+  padding-top: 0px;
+}
+
+@include lg {
+  .contact-widget-style2 {
+    padding: 0 20px 40px 20px;
+  }
+}
+
+@include md {
+  .contact-widget-style2 {
+    text-align: left;
+    padding: 0;
+    box-shadow: none;
+  }
+}

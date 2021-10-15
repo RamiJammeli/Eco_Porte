@@ -1,0 +1,51 @@
+.widget {
+  .twitter-feeds {
+    ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+    }
+    
+    li {
+      border-bottom: 1px solid $white-color;
+      font-size: 14px;
+      line-height: 24px;
+      word-break: break-all;
+      display: block;
+      margin: 0 0;
+      padding-bottom: 15px;
+      margin-bottom: 15px;
+      padding-left: 30px;
+      position: relative;
+
+      &:last-child {
+        padding-bottom: 0;
+        margin-bottom: 0;
+        border-bottom: none;
+      }
+
+      i {
+        position: absolute;
+        left: 0;
+        top: 5px;
+        display: inline-block;
+        color: $theme-color;
+        font-size: 16px;
+      }
+
+      
+    }
+
+    a {
+      color: inherit;
+      display: inline;
+    }
+
+    .post-date {
+      font-size: 16px;
+      font-family: $title-font;
+      display: block;
+      margin-top: 7px;
+    }
+  }
+}

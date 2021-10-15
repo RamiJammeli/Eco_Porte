@@ -1,0 +1,83 @@
+.product-details-layout1 {
+
+  .product-image {
+    margin-bottom: 5px;
+  }
+
+  .product-thumb {
+    margin-left: -2.5px;
+    margin-right: -2.5px;
+    
+    img {
+      margin: 0 2.5px;
+      cursor: pointer;
+      border: 2px solid transparent;
+      transition: all ease 0.4s;
+      width: calc(100% - 5px);
+    }
+
+    .slick-current {
+      img  {
+        border-color: $theme-color;
+      }
+    }    
+  }
+
+  .vs-product-info {
+    .fa-star {
+      color: $yellow-color;
+      margin-right: 3px;
+    }
+  }
+
+  
+  .product-features {
+    
+    ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+
+      li {
+        margin: 0;
+        margin-bottom: 5px;
+      }
+    }
+  }
+
+  .vs-comment-area {
+    .vs-btn {
+      color: $white-color;
+      background-color: $theme-color;
+      border: 1px solid $theme-color;
+      line-height: 38px;
+
+      .vs-btn-shape {
+        background-color: $white-color;
+      }
+      
+      &:hover {
+        color: $body-color;
+        border-color: $theme-color;
+      }
+    }
+  }
+
+}
+
+
+
+@include md {
+  .product-details-layout1 {
+    
+    .mt-60 {
+      margin-top: 30px;
+    }
+  }
+}
+
+@include xs {
+  .product-details-layout1 .vs-comment-area .vs-btn {
+    line-height: 27px;
+  }
+}

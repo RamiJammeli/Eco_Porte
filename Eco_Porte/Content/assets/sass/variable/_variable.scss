@@ -1,0 +1,103 @@
+:root {
+  --title-color       : #211e1c;
+  --body-color        : #211e1c;
+  --smoke-color       : #f6f6f6;
+  --light-smoke-color : #fafafa;
+  --white-color       : #ffffff;
+  --black-color       : #000000;
+  --dark-color        : #151515;
+  --silver-color      : #aeaeae;
+  --yellow-color      : #fec624;
+  --success-color     : #28a745;
+  --error-color       : #dc3545;
+  --border-color      : rgba(0,0,0,0.10);
+  --theme-font1       : 'Roboto', sans-serif;
+  --theme-font2       : 'Prata', serif;
+  --icon-font         : 'Font Awesome 5 Pro';
+  --icon-font2        : 'Flaticon';
+  --moving-ani-duration : 5s;
+  --ripple-ani-duration : 5s;
+}
+
+
+// Color Variation
+$theme-color       : var(--theme-color);
+$title-color       : var(--title-color);
+$body-color        : var(--body-color);
+$smoke-color       : var(--smoke-color);
+$light-smoke-color : var(--light-smoke-color);
+$black-color       : var(--black-color);
+$white-color       : var(--white-color);
+$dark-color        : var(--dark-color);
+$silver-color      : var(--silver-color);
+$yellow-color      : var(--yellow-color);
+$success-color     : var(--success-color);
+$error-color       : var(--error-color);
+$border-color      : var(--border-color);
+
+
+// Color Mapping 
+$themeColor     : ();
+$themeColor     : map-merge((
+  "theme"       : $theme-color,
+  "title"       : $title-color,
+  "body"        : $body-color,
+  "black"       : $black-color,
+  "smoke"       : $smoke-color,
+  "light-smoke" : $light-smoke-color,
+  "white"       : $white-color,
+  "dark"        : $dark-color,
+  "silver"      : $silver-color,
+  "yellow"      : $yellow-color,
+  "success"     : $success-color,
+  "error"       : $error-color
+), $themeColor);
+
+
+// Font Variation
+$theme-font1: var(--theme-font1);
+$theme-font2: var(--theme-font2);
+$icon-font  : var(--icon-font);
+$icon-font2 : var(--icon-font2);
+
+$body-font       : $theme-font1;
+$body-font-size  : 16px;
+$body-line-Height: 26px;
+$p-line-Height   : 1.8;
+$body-font-weight: 400;
+$title-font      : $theme-font2;
+
+// Font Mapping 
+$themeFont: ();
+$themeFont: map-merge((
+  "font1": $theme-font1,
+  "font2": $theme-font2,
+  "icon" : $icon-font,
+  "icon2": $icon-font2
+), $themeFont);
+
+
+// Device Variation
+$xl: 1500px;
+$ml: 1300px;
+$lg: 1199px;
+$md: 992px;
+$sm: 768px;
+$xs: 576px;
+
+
+// Spacing Count with 5x
+$xs-space-count: 40;
+$sm-space-count: 10;
+$md-space-count: 10;
+$lg-space-count: 45;
+$xl-space-count: 45;
+
+
+// Section Space 
+$space : 130px;
+$space-medium: 100px;
+
+// Section Space md
+$space-md : 60px;
+$space-medium-md: 30px;

@@ -1,0 +1,48 @@
+.vs-blog-layout1 {
+  .blog-meta {
+    border-bottom: 1px solid $theme-color;
+    padding-bottom: 15px;
+    margin-bottom: 27px;
+  }
+
+  .blog-content {
+    padding: 27px 30px;
+    padding-bottom: 1px;
+    margin: 0 20px;
+    margin-top: -60px;
+    position: relative;
+    z-index: 2;
+  }
+
+}
+
+
+
+@include lg {
+  .vs-blog-layout1 {
+    .blog-meta {
+      margin-bottom: 20px;
+
+      a {
+        font-size: 14px;
+      }
+    }
+    
+    .blog-content {
+      margin: 0;
+    }
+  }
+}
+
+
+@include lg {
+  .vs-blog-layout1 {
+    .blog-content {
+      padding: 15px 15px;
+    }
+
+    p {
+      margin-bottom: 0;
+    }
+  }
+}

@@ -1,0 +1,17 @@
+.footer-layout2 {
+  .shape1 {
+    bottom: 12%;
+    left: 0;
+    max-width: 350px;
+  }
+}
+
+
+@media (max-width: 1800px) {
+  .footer-layout2 {
+    .shape1 {
+      display: none;
+    }
+  }
+
+}
