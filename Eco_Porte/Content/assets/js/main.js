@@ -216,7 +216,7 @@
       responsiveUnder: (responsiveunder ? responsiveunder : 1920),
       layersContainer: (container ? container : 1920),
       showCircleTimer: (showcircletimer ? true : false),
-      skinsPath: 'layerslider/skins/',
+      skinsPath: 'Content/layerslider/skins/',
       thumbnailNavigation: (thumbnailnavigation ? false : true),
     });
   });
