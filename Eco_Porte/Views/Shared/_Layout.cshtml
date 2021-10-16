@@ -115,26 +115,14 @@
                 <div class="col-7 col-md-9 text-right position-static">
                     <nav class="main-menu menu-sticky1 d-none d-lg-block link-inherit mobile-menu-active">
                         <ul>
-                            <li class="menu-item-has-children">
-                                <a href="index.html">Home</a>
-                                <ul class="sub-menu">
-                                    <li><a href="index.html">Home One</a></li>
-                                    <li><a href="index-2.html">Home Two</a></li>
-                                    <li><a href="index-3.html">Home Three</a></li>
-                                    <li><a href="index-4.html">Home Four <span class="sup-label">New</span></a></li>
-                                    <li><a href="index-onepage.html">Home One (One Page)</a></li>
-                                    <li><a href="index-2-onepage.html">Home Two (One Page)</a></li>
-                                    <li><a href="index-3-onepage.html">Home There (One Page)</a></li>
-                                    <li><a href="index-4-onepage.html">Home Four (One Page) <span class="sup-label">New</span></a></li>
-                                </ul>
+                            <li>
+                                @Html.ActionLink("Accueil", "Index", "Home")
+
                             </li>
                             <li>@Html.ActionLink("Qui sommes nous", "About", "Home")</li>
-                            <li class="menu-item-has-children">
-                                <a href="service.html">Services</a>
-                                <ul class="sub-menu">
-                                    <li><a href="service.html">Services</a></li>
-                                    <li><a href="service-details.html">Services Details</a></li>
-                                </ul>
+                            <li >
+                                @Html.ActionLink("Services", "Service", "Home")                             
+                                         
                             </li>
                             <li class="menu-item-has-children">
                                 <a href="blog.html">News</a>
@@ -192,7 +180,7 @@
                                             <li><a href="faq.html">FAQ Page</a></li>
                                             <li><a href="team.html">Team</a></li>
                                             <li><a href="team-details.html">Team Details</a></li>
-                                            <li><a href="service.html">Services</a></li>
+                                            <li>@Html.ActionLink("Services", "Service", "Home")</li>
                                             <li><a href="service-details.html">Services Details</a></li>
                                             <li><a href="gallery.html">Portfolio</a></li>
                                             <li><a href="gallery-details.html">Portfolio Details</a></li>
@@ -269,26 +257,16 @@
                 <div class="col-md-5 col-xl-3 position-static d-none d-lg-block">
                     <nav class="main-menu menu-style2 text-center">
                         <ul>
-                            <li class="menu-item-has-children">
-                                <a href="index.html">Home</a>
-                                <ul class="sub-menu">
-                                    <li><a href="index.html">Home One</a></li>
-                                    <li><a href="index-2.html">Home Two</a></li>
-                                    <li><a href="index-3.html">Home Three</a></li>
-                                    <li><a href="index-4.html">Home Four <span class="sup-label">New</span></a></li>
-                                    <li><a href="index-onepage.html">Home One (One Page)</a></li>
-                                    <li><a href="index-2-onepage.html">Home Two (One Page)</a></li>
-                                    <li><a href="index-3-onepage.html">Home Three (One Page)</a></li>
-                                    <li><a href="index-4-onepage.html">Home Four (One Page) <span class="sup-label">New</span></a></li>
-                                </ul>
+                            <li >
+                                @Html.ActionLink("Accueil","Index","Home")
+
+                               
                             </li>
                             <li>@Html.ActionLink("Qui sommes nous", "About", "Home")</li>
-                            <li class="menu-item-has-children">
-                                <a href="service.html">Services</a>
-                                <ul class="sub-menu">
-                                    <li><a href="service.html">Services</a></li>
-                                    <li><a href="service-details.html">Services Details</a></li>
-                                </ul>
+                            <li >
+                                @Html.ActionLink("Services", "Service", "Home")                                
+                                    
+                              
                             </li>
                         </ul>
                     </nav>
@@ -340,7 +318,7 @@
                                             <li><a href="faq.html">FAQ Page</a></li>
                                             <li><a href="team.html">Team</a></li>
                                             <li><a href="team-details.html">Team Details</a></li>
-                                            <li><a href="service.html">Services</a></li>
+                                            <li>@Html.ActionLink("Services", "Service", "Home")</li>
                                             <li><a href="service-details.html">Services Details</a></li>
                                             <li><a href="gallery.html">Portfolio</a></li>
                                             <li><a href="gallery-details.html">Portfolio Details</a></li>
