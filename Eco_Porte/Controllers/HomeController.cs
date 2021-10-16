@@ -26,5 +26,12 @@ namespace Eco_Porte.Controllers
 
             return View();
         }
+
+        public ActionResult Service()
+        {
+            
+
+            return View();
+        }
     }
 }
