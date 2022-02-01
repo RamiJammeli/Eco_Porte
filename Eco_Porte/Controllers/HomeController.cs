@@ -33,5 +33,18 @@ namespace Eco_Porte.Controllers
 
             return View();
         }
+
+        public ActionResult Blog()
+        {
+
+            return View();
+        }
+        public ActionResult Personaliser()
+        {
+
+            return View();
+        }
+
+
     }
 }

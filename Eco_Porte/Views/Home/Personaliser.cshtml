@@ -1,0 +1,254 @@
+﻿
+@{
+    ViewBag.Title = "Personaliser";
+}
+<style>
+    #imgpers {
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
+
+    .left-right-perso {
+        z-index: 1000;
+    }
+
+    @@media all and (min-width: 992px) {
+        .left-right-perso {
+            margin-top: 100px;
+            margin-bottom: 100px;
+        }
+
+        .perso-right-media-body {
+            text-align: left;
+            margin-left: 22px;
+        }
+
+
+        .perso-left-media-body {
+            text-align: right;
+            margin-right: 22px;
+        }
+
+        .vs-features-layout1 .row > div:nth-child(2n+1) .vs-feature {
+            -webkit-box-orient: horizontal;
+            -webkit-box-direction: reverse;
+            -webkit-flex-direction: row-reverse;
+            -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+            text-align: right;
+        }
+    }
+
+    @@media all and (max-width: 991px) {
+        .feature-title {
+            font-size: smaller;
+        }
+    }
+</style>
+
+<!--==============================
+    Breadcumb
+============================== -->
+<div class="breadcumb-wrapper breadcumb-layout1 background-image link-inherit space mx-100" data-vs-img="../Content/assets/img/products/8F7A9414.jpg" data-overlay="black" data-opacity="3">
+    <div class="container z-index-common py-10">
+        <div class="breadcumb-content">
+            <h1 class="breadcumb-title sec-title-style1 text-white mt-0 mb-2">Core Features</h1>
+            <ul class="breadcumb-menu-style1 text-white">
+                <li><a href="index.html"><i class="fal fa-home text-theme"></i>Home</a></li>
+                <li class="active">Features</li>
+            </ul>
+        </div>
+    </div>
+</div>
+<!--==============================
+Features Area
+==============================-->
+<!--rami-->
+
+<section class="vs-features-wrapper vs-features-layout1 space-bottom" id="feature">
+    <div class="container">
+        <div style="background-color: rgba(249, 163, 146, 0.15) ;top:110px;padding-top:0px; padding-bottom:0px" class="inner-wrapper px-4 px-lg-0 space-md position-relative ">
+
+            <div class="row">
+                <div class="col-3 col-lg-4 left-right-perso">
+
+                    <div class="vs-feature media wow fadeInUp col-12" data-wow-delay="0.3s">
+                        <div class="media-icon">
+                            <span class="icon-btn text-theme bg-white"><i class="fa-2x flaticon-beauty-treatment"></i></span>
+                        </div>
+                        <div class="media-body perso-left-media-body">
+                            <h3 class="feature-title h4 mb-10">Matt Effects</h3>
+                            <!-- <p class="feature-text">flaticon-beauty2 </p>-->
+                        </div>
+                    </div>
+                    <div class="vs-feature media wow fadeInUp col-12" data-wow-delay="0.3s">
+                        <div class="media-icon">
+                            <span class="icon-btn text-theme bg-white"><i class="fa-2x flaticon-beauty-treatment"></i></span>
+                        </div>
+                        <div class="media-body perso-left-media-body">
+                            <h3 class="feature-title h4 mb-10">Matt Effects</h3>
+                            <!-- <p class="feature-text">flaticon-beauty2 </p>-->
+                        </div>
+                    </div>
+                    <div class="vs-feature media wow fadeInUp col-12" data-wow-delay="0.3s">
+                        <div class="media-icon">
+                            <span class="icon-btn text-theme bg-white"><i class="fa-2x flaticon-beauty-treatment"></i></span>
+                        </div>
+                        <div class="media-body perso-left-media-body">
+                            <h3 class="feature-title h4 mb-10">Matt Effects</h3>
+                            <!-- <p class="feature-text">flaticon-beauty2 </p>-->
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-lg-4">
+                    <img class=" wow fadeIn" id="imgpers" data-wow-delay="0.3s" src="~/Content/assets/img/products/8F7A9338-2.jpg" alt="feature Image">
+
+                </div>
+                <div class="col-3 col-lg-4 left-right-perso">
+
+                    <div class="vs-feature media wow fadeInUp" data-wow-delay="0.3s">
+
+                        <div class="media-body perso-right-media-body">
+                            <h3 class="feature-title h4 mb-10">Relax Zones</h3>
+
+                        </div>
+                        <div class="media-icon">
+                            <span class="icon-btn text-theme bg-white"><i class="fa-2x flaticon-stones"></i></span>
+                        </div>
+                    </div>
+                    <div class="vs-feature media wow fadeInUp" data-wow-delay="0.4s">
+
+                        <div class="media-body perso-right-media-body">
+                            <h3 class="feature-title h4 mb-10">Hair Diration</h3>
+
+                        </div>
+                        <div class="media-icon">
+                            <span class="icon-btn text-theme bg-white"><i class="fa-2x flaticon-essential"></i></span>
+                        </div>
+                    </div>
+                    <div class="vs-feature media wow fadeInUp" data-wow-delay="0.5s">
+
+                        <div class="media-body perso-right-media-body">
+                            <h3 class="feature-title h4 mb-10">Aromo Therophy</h3>
+
+                        </div>
+                        <div class="media-icon">
+                            <span class="icon-btn text-theme bg-white"><i class="fa-2x flaticon-lotus-flower-1"></i></span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section class="vs-features-wrapper vs-features-layout1 space-bottom" id="featuremobile">
+    <div class="container">
+        <div style="top:110px" class="inner-wrapper px-4 px-lg-0 space-md position-relative ">
+            <div class="shape2 bg-solid-theme"></div>
+            <div class="row">
+                <div class="col-4">
+                    <div class="vs-feature media wow fadeInUp" data-wow-delay="0.5s">
+
+                        <div class="media-body">
+                            <h3 class="feature-title h4 mb-10">Aromo Therophy</h3>
+
+                        </div>
+                        <div class="media-icon">
+                            <span class="icon-btn text-theme bg-white"><i class="fa-2x flaticon-lotus-flower-1"></i></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="vs-feature media wow fadeInUp" data-wow-delay="0.5s">
+
+                        <div class="media-body">
+                            <h3 class="feature-title h4 mb-10">Aromo Therophy</h3>
+
+                        </div>
+                        <div class="media-icon">
+                            <span class="icon-btn text-theme bg-white"><i class="fa-2x flaticon-lotus-flower-1"></i></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="vs-feature media wow fadeInUp" data-wow-delay="0.5s">
+
+                        <div class="media-body">
+                            <h3 class="feature-title h4 mb-10">Aromo Therophy</h3>
+
+                        </div>
+                        <div class="media-icon">
+                            <span class="icon-btn text-theme bg-white"><i class="fa-2x flaticon-lotus-flower-1"></i></span>
+                        </div>
+                    </div>
+                </div>
+
+
+
+            </div>
+            <br />
+            <div class="col-12 ">
+                <img class=" wow fadeIn" data-wow-delay="0.3s" src="~/Content/assets/img/products/8F7A9338-2.jpg" alt="feature Image">
+
+            </div>
+            <br />
+            <div class="row">
+                <div class="col-4">
+                    <div class="vs-feature media wow fadeInUp" data-wow-delay="0.5s">
+                        <div class="media-icon">
+                            <span class="icon-btn text-theme bg-white"><i class="fa-2x flaticon-lotus-flower-1"></i></span>
+                        </div>
+                        <div class="media-body">
+                            <h3 class="feature-title h4 mb-10">Aromo Therophy</h3>
+
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="vs-feature media wow fadeInUp" data-wow-delay="0.5s">
+                        <div class="media-icon">
+                            <span class="icon-btn text-theme bg-white"><i class="fa-2x flaticon-lotus-flower-1"></i></span>
+                        </div>
+                        <div class="media-body">
+                            <h3 class="feature-title h4 mb-10">Aromo Therophy</h3>
+
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="vs-feature media wow fadeInUp" data-wow-delay="0.5s">
+                        <div class="media-icon">
+                            <span class="icon-btn text-theme bg-white"><i class="fa-2x flaticon-lotus-flower-1"></i></span>
+                        </div>
+                        <div class="media-body">
+                            <h3 class="feature-title h4 mb-10">Aromo Therophy</h3>
+
+                        </div>
+
+                    </div>
+                </div>
+
+
+
+            </div>
+        </div>
+    </div>
+</section>
+<script type="text/javascript">
+   $(document).ready(function(){
+    if (window.matchMedia("(min-width: 992px)").matches) {
+   $("#featuremobile").hide();
+  } else {
+   $("#feature").hide(); 
+    }
+    });
+    
+</script>
