@@ -420,7 +420,10 @@
     <Content Include="Content\assets\img\products\8F7A9412.jpg" />
     <Content Include="Content\assets\img\products\8F7A9413.jpg" />
     <Content Include="Content\assets\img\products\8F7A9414.jpg" />
+    <Content Include="Content\assets\img\products\aboutusindex.jpg" />
+    <Content Include="Content\assets\img\products\carou33.jpg" />
     <Content Include="Content\assets\img\products\contactus.jpg" />
+    <Content Include="Content\assets\img\products\leaf.png" />
     <Content Include="Content\assets\img\products\logo2.png" />
     <Content Include="Content\assets\img\products\logoecoporte.png" />
     <Content Include="Content\assets\img\service\service-details-1.jpg" />
