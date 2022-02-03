@@ -2,6 +2,22 @@
 @{
     ViewBag.Title = "Personaliser";
 }
+<script>
+      function readURL(input) {
+  if (input.files && input.files[0]) {
+    var reader = new FileReader();
+    reader.onload = function (e) {
+      $('#blah')
+        .attr('src', e.target.result)
+        .width(50)
+        .height(50);
+     $('#blah').show();
+    };
+    reader.readAsDataURL(input.files[0]);
+  }
+}
+
+</script>
 <style>
     .feature-title{
         cursor:grab;
@@ -51,6 +67,55 @@
             font-size: smaller;
         }
     }
+
+    /*input file*/
+    
+
+    .file {
+        display: none;
+    }
+
+    .file-name {
+        position: relative;
+        overflow: hidden;
+        line-height: 30px;
+        padding: 5px;
+        box-sizing: border-box;
+        font-size: 15px;
+        vertical-align: middle;
+       
+        border: 2px solid #dbdbdb;
+        border-radius: 0;
+        height: calc(2em + 0.75rem + 2px);
+    }
+
+    .btnfile {
+        background: white;
+        border: none;
+        border-radius: 0;
+        width: 100px;
+        box-sizing: border-box;
+        padding: 2px 10px;
+        background-color: white;
+        transition: all 0.6s;
+        color: black;
+        font-size: 15px;
+        vertical-align: middle;
+        text-transform: uppercase;
+        margin-left: 1rem;
+    }
+
+       
+
+    
+   /*********/
+
+   /**modal*/
+    .labelpopup{
+        margin-top:18px;
+    }
+   /*****/
+
 </style>
 
 <div class="container body-content">
@@ -80,59 +145,268 @@
                 <div class="row">
                     <div class="col-3 col-lg-4 left-right-perso">
 
+
+
+                        <!--color-->
                         <div class="vs-feature media wow fadeInUp col-12" data-wow-delay="0.3s">
                             <div class="media-icon">
                                 <span class="icon-btn text-theme bg-white"><i class="fa-2x flaticon-beauty-treatment"></i></span>
                             </div>
                             <div class="media-body perso-left-media-body">
-                                <h3 class="feature-title h4 mb-10" id="filtre1"> Matt Effects</h3>
+                                <h3 class="feature-title h4 mb-10" id="filtre1"> Color</h3>
                                 <!-- <p class="feature-text">flaticon-beauty2 </p>-->
                             </div>
+
                         </div>
+
+
+                        <div class="form-group   col-12 subfilters" id="subfiltre-color">
+                            <select class="subfiltre-select" id="subfiltre-color-select">
+                                <option selected>Select Color</option>
+                                <option id="red">Red</option>
+                                <option id="blue">Blue</option>
+                                <option id="green">Green</option>
+                                <option id="black">Black</option>
+                                <option id="white">White</option>
+                            </select>
+                        </div>
+                        <!--end color-->
+                        <!--tissue-->
+
                         <div class="vs-feature media wow fadeInUp col-12" data-wow-delay="0.3s">
                             <div class="media-icon">
                                 <span class="icon-btn text-theme bg-white"><i class="fa-2x flaticon-beauty-treatment"></i></span>
                             </div>
                             <div class="media-body perso-left-media-body">
-                                <h3 class="feature-title h4 mb-10" id="filtre2">Matt Effects</h3>
-                                <!-- <p class="feature-text">flaticon-beauty2 </p>-->
+                                <h3 class="feature-title h4 mb-10" id="filtre2">Tissue</h3>
+
                             </div>
                         </div>
-                       
+
+
+                        <div class="form-group   col-12 subfilters" id="subfiltre-tissue">
+                            <select class="subfiltre-select" id="subfiltre-tissue-select">
+                                <option selected>Select Tissu</option>
+                                <option id="eponge">Eponge rasée</option>
+                                <option id="coton">Coton recyclé</option>
+                                <option id="nid">Nid d'abeille</option>
+                            </select>
+                        </div>
+                        <!--end tissue-->
+                        <!--border -->
+                        <div class="vs-feature media wow fadeInUp col-12" data-wow-delay="0.3s">
+                            <div class="media-icon">
+                                <span class="icon-btn text-theme bg-white"><i class="fa-2x flaticon-beauty-treatment"></i></span>
+                            </div>
+                            <div class="media-body perso-left-media-body">
+                                <h3 class="feature-title h4 mb-10" id="filtre3">Border color</h3>
+
+                            </div>
+                        </div>
+
+                        <div class="form-group  col-12 subfilters" id="subfiltre-border">
+                            <select class="subfiltre-select" id="subfiltre-border-select">
+                                <option selected>Select Border color</option>
+                                <option id="red">Red</option>
+                                <option id="blue">Blue</option>
+                                <option id="green">Green</option>
+                            </select>
+                        </div>
+
+                        <!--end border-->
+
+
+
+
+
                     </div>
                     <div class="col-6 col-lg-4">
-                        <img class=" wow fadeIn imgperso" id="imgpers" data-wow-delay="0.3s" src="~/Content/assets/img/products/8F7A9338-2.jpg" alt="feature Image">
-
+                        <img class=" wow fadeIn imgperso" id="imgpers" data-wow-delay="0.3s" src="~/Content/assets/img/products/8F7A9054-2.jpg" alt="feature Image">
+                        <img id="blah" class=" wow fadeIn" src="#" alt="your image" style="z-index:999999" data-wow-delay="0.4s" />
                     </div>
                     <div class="col-3 col-lg-4 left-right-perso">
 
+                        <!--Size-->
                         <div class="vs-feature media wow fadeInUp" data-wow-delay="0.3s">
 
                             <div class="media-body perso-right-media-body">
-                                <h3 class="feature-title h4 mb-10" id="filtre3">Relax Zones</h3>
+                                <h3 class="feature-title h4 mb-10" id="filtre4">Size</h3>
 
                             </div>
                             <div class="media-icon">
                                 <span class="icon-btn text-theme bg-white"><i class="fa-2x flaticon-stones"></i></span>
                             </div>
                         </div>
+                        <div class="form-group  col-12 subfilters" id="subfiltre-size">
+                            <select class="subfiltre-select" id="subfiltre-size-select">
+                                <option selected>Select Size</option>
+                                <option id="small">S</option>
+                                <option id="medium">M</option>
+
+                            </select>
+                        </div>
+                        <!--end size-->
+                        <!--logo-->
                         <div class="vs-feature media wow fadeInUp" data-wow-delay="0.4s">
 
                             <div class="media-body perso-right-media-body">
-                                <h3 class="feature-title h4 mb-10" id="filtre4">Hair Diration</h3>
+                                <h3 class="feature-title h4 mb-10" id="filtre5">Logo</h3>
 
                             </div>
                             <div class="media-icon">
                                 <span class="icon-btn text-theme bg-white"><i class="fa-2x flaticon-essential"></i></span>
                             </div>
                         </div>
-                      
+
+                        <div class=" col-12 subfilters" id="subfiltre-logo" style="padding-bottom:30px">
+                            <div class="d-flex justify-content-center wrapper align-items-center">
+                                <input type="file" name="file" accept="image/png, image/jpeg" id="file" class="file" onchange="readURL(this);">
+                                <div class="d-flex">
+                                    <input type="text" name="file-name" id="file-name" class="file-name" readonly="readonly">
+                                    <input type="button" class="btn btnfile" value="Upload">
+                                </div>
+                            </div>
+
+                        </div>
+                        <!--end logo-->
+                        <!--typeproduit-->
+                        <div class="vs-feature media wow fadeInUp" data-wow-delay="0.3s">
+
+                            <div class="media-body perso-right-media-body">
+                                <h3 class="feature-title h4 mb-10" id="filtre6">Type</h3>
+
+                            </div>
+                            <div class="media-icon">
+                                <span class="icon-btn text-theme bg-white"><i class="fa-2x flaticon-stones"></i></span>
+                            </div>
+                        </div>
+                        <div class="form-group  col-12 subfilters" id="subfiltre-type">
+                            <select class="subfiltre-select" id="subfiltre-type-select">
+                                <option selected>Select Type</option>
+                                <option id="small">Cool ouvert</option>
+                                <option id="medium">Protected</option>
+                                <option id="medium">Magroucha</option>
+
+                            </select>
+                        </div>
+                        <!--end type-->
+
                     </div>
 
                 </div>
             </div>
         </div>
     </section>
+    <div class="form-group col-12 mb-0 text-center">
+        <button type="button" id="confirmer"  class="vs-btn wave-style1">Make Appointment<i class="far fa-arrow-right"></i></button>
+        <br />
+        <label id="error1"> *Make sure that you selected all filters </label>
+        
+    </div>
+
+
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Details</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <section class="contact-form-wrapper contact-form-layout1 space-bottom" style=" padding-bottom: 20px; ">
+                        <div class="container">
+                            <div class="inner-wrapper bg-light-theme space px-100" style=" padding-top: 20px; padding-bottom: 20px; ">
+                                
+                                <form action="mail.php" method="POST" class="contact-form contact-form-style1 input-white">
+                                    <div class="row gutters-20">
+                                        <div class="form-group col-12 row">
+                                            <div class="col-2">
+                                                <label class="labelpopup"> Color</label>
+                                            </div>
+                                            <div class="col-9">
+                                                <input type="text" name="color" id="modal-color" class="form-control" placeholder="Color">
+                                            </div>
+
+                                        </div>
+                                        <div class="form-group col-md-12 row">
+                                            <div class="col-2">
+                                                <label class="labelpopup"> Tissue</label>
+                                            </div>
+                                            <div class="col-9">
+                                                <input type="text" name="tissue" id="modal-tissue" class="form-control" placeholder="tissue">
+                                 
+                                            </div>
+                                        </div>
+
+
+                                        <div class="form-group col-md-12 row">
+                                            <div class="col-2">
+                                                <label class="labelpopup"> Border</label>
+                                            </div>
+                                            <div class="col-9">
+                                                <input type="text" name="border" id="modal-border" class="form-control" placeholder="Border color">
+                                            </div>
+                                        </div>
+
+
+                                        <div class="form-group col-md-12 row">
+                                            <div class="col-2">
+                                                <label class="labelpopup"> size</label>
+                                            </div>
+                                            <div class="col-9">
+                                                <input type="text" name="size" id="modal-size" class="form-control" placeholder="size">
+                                               
+                                            </div>
+                                        </div>
+
+                                        <div class="form-group col-md-12 row">
+                                            <div class="col-2">
+                                                <label class="labelpopup"> Logo</label>
+                                            </div>
+                                            <div class="col-9">
+                                                <select  id="modal-logo">
+                                                    
+                                                    <option selected id="print">Print</option>
+                                                    <option id="undercover">Undercover</option>
+                                                </select>
+
+                                            </div>
+                                        </div>
+
+
+                                        <div class="form-group col-md-12 row">
+                                            <div class="col-2">
+                                                <label class="labelpopup"> Type</label>
+                                            </div>
+                                            <div class="col-9">
+                                                <input type="text" name="typep" id="modal-typep" class="form-control" placeholder="type">
+                                               
+                                            </div>
+
+                                            
+                                        </div>
+                                        <div class="form-group col-12 text-center mb-0">
+                                            <button type="button" class="vs-btn wave-style1">Next<i class="far fa-arrow-right"></i></button>
+                                        </div>
+                                        <span class="form-messages mt-20 text-center"></span>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+                <div class="modal-footer">
+                    
+                    <button type="button" class="vs-btn wave-style1">Confirm<i class="far fa-arrow-right"></i></button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
 
 
     <section class="vs-features-wrapper vs-features-layout1 space-bottom" id="featuremobile">
@@ -164,7 +438,7 @@
                             </div>
                         </div>
                     </div>
-                   
+
 
 
 
@@ -200,7 +474,7 @@
 
                         </div>
                     </div>
-                    
+
 
 
 
@@ -208,32 +482,137 @@
             </div>
         </div>
     </section>
-    </div>
+</div>
 <script type="text/javascript">
    $(document).ready(function(){
+    //declaration des variables
+    let color="";
+    let bordercolor="";
+    let sizeproduct="";
+    let typeproduct="";
+    let logo="a";
+    let tissue="";
+    //end declaration
+   
+    //mobile version
     if (window.matchMedia("(min-width: 992px)").matches) {
    $("#featuremobile").hide();
   } else {
    $("#feature").hide();
     }
+    //end mobile version
 
+    //hide all subfilters and errors
+    $('.subfilters').hide();
+    $('#error1').hide();
+    $('#blah').hide();
+    //end hide all subliters
+
+    //logo upload
+     $('.btnfile').on('click', function() {
+    $('.file').trigger('click');
+  });
+
+  $('.file').on('change', function() {
+    var fileName = $(this)[0].files[0].name;    
+    $('#file-name').val(fileName);
+  });
+
+
+  
+    //end logo upload
+
+
+    //fiters click
     $('.feature-title').on('click',function(){
+        $('.subfilters').hide();
+
         if(this.id=='filtre1' || this.id=='filtre1mb'){
-            $('.imgperso').attr('src','../Content/assets/img/products/8F7A9340.jpg');
+            $('#subfiltre-color').show();
+            $('.imgperso').attr('src','../Content/assets/img/products/8F7A9059.jpg');
+
         }
 
      if(this.id=='filtre2' || this.id=='filtre2mb'){
-$('.imgperso').attr('src','../Content/assets/img/products/8F7A9339.jpg');
+    $('#subfiltre-tissue').show();
+$('.imgperso').attr('src','../Content/assets/img/products/8F7A9020.jpg');
         }
 
      if(this.id=='filtre3' || this.id=='filtre3mb'){
-  $('.imgperso').attr('src','../Content/assets/img/products/8F7A9341.jpg');
+    $('#subfiltre-border').show();
+  $('.imgperso').attr('src','../Content/assets/img/products/8F7A9059.jpg');
         }
 
      if(this.id=='filtre4' || this.id=='filtre4mb'){
-$('.imgperso').attr('src','../Content/assets/img/products/8F7A9338.jpg');
+    $('#subfiltre-size').show();
+$('.imgperso').attr('src','../Content/assets/img/products/8F7A9020.jpg');
         }
+
+
+    if(this.id=='filtre5' || this.id=='filtre5mb'){
+    $('#subfiltre-logo').show();
+$('.imgperso').attr('src','../Content/assets/img/products/8F7A9020.jpg');
+        }
+
+    if(this.id=='filtre6' || this.id=='filtre6mb'){
+    $('#subfiltre-type').show();
+$('.imgperso').attr('src','../Content/assets/img/products/8F7A9019.jpg');
+        }
+
     });
+
+    //end filters 
+
+    //subfilters
+    $('.subfiltre-select').on('change', function() {
+    
+    color="";
+     bordercolor="";
+     sizeproduct="";
+     typeproduct="";
+     logo="a";
+     tissue="";
+
+        if($("#subfiltre-color-select option:selected").index()>0) 
+        color=$('#subfiltre-color-select').val();
+
+     if($("#subfiltre-border-select option:selected").index()>0) 
+         bordercolor=$('#subfiltre-border-select').val();
+
+     if($("#subfiltre-size-select option:selected").index()>0) 
+         sizeproduct=$('#subfiltre-size-select').val();
+
+     if($("#subfiltre-type-select option:selected").index()>0) 
+         typeproduct=$('#subfiltre-type-select').val();
+
+     //if($("#subfiltre-color-select option:selected").index()>0) 
+         //logo=$('#subfiltre-logo-select').val();
+
+     if($("#subfiltre-tissue-select option:selected").index()>0) 
+         tissue=$('#subfiltre-tissue-select').val();
+
+
+    });
+    //end subfilters
+
+    $("#confirmer").on('click',function(){
+   
+    if(color=="" || bordercolor=="" || sizeproduct=="" || typeproduct=="" || logo=="" || tissue==""){
+     $('#error1').show();
+     $('#exampleModal').modal('show');
+       
+    }else{
+    $('#error1').hide();
+     $('#exampleModal').modal('show');
+    $('#modal-color').val(color);
+    $('#modal-border').val(bordercolor);
+    $('#modal-size').val(sizeproduct);
+    $('#modal-typep').val(typeproduct);
+    $('#modal-tissue').val(tissue);
+    }
+
+    });
+
     });
 
 </script>
