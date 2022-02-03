@@ -420,6 +420,7 @@
     <Content Include="Content\assets\img\products\8F7A9412.jpg" />
     <Content Include="Content\assets\img\products\8F7A9413.jpg" />
     <Content Include="Content\assets\img\products\8F7A9414.jpg" />
+    <Content Include="Content\assets\img\products\aboutushome.jpg" />
     <Content Include="Content\assets\img\products\aboutusindex.jpg" />
     <Content Include="Content\assets\img\products\carou33.jpg" />
     <Content Include="Content\assets\img\products\contactus.jpg" />
@@ -738,6 +739,7 @@
     <Content Include="Views\Home\Service.cshtml" />
     <Content Include="Views\Home\Blog.cshtml" />
     <Content Include="Views\Home\Personaliser.cshtml" />
+    <Content Include="Views\Home\Products.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
