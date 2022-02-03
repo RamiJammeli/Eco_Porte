@@ -16,5 +16,14 @@ namespace Eco_Porte.Models
         public String Matiere { get; set; }
         public String Image { get; set; }
         public virtual Categorie categorie { get; set; }
+
+        public Produit(int id, string nom, string description, string image, Categorie categorie)
+        {
+            Id = id;
+            Nom = nom;
+            Description = description;
+            Image = image;
+            this.categorie = categorie;
+        }
     }
 }

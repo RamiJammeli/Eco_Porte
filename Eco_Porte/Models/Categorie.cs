@@ -9,6 +9,12 @@ namespace Eco_Porte.Models
     {
         public int Id { get; set; }
         public string Nom { get; set; }
-        public virtual ICollection<Produit> Produits0 { get; set; }
+        public virtual ICollection<Produit> Produits { get; set; }
+
+        public Categorie(int id, string nom)
+        {
+            Id = id;
+            Nom = nom;
+        }
     }
 }
