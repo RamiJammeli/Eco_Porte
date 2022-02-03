@@ -67,9 +67,9 @@ namespace Eco_Porte.Controllers
             return View();
         }
 
-        public ActionResult Products()
+        public ActionResult Products(string id)
         {
-
+            ViewBag.id = id;
             return View();
         }
 

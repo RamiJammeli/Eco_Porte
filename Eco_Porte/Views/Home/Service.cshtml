@@ -1,4 +1,16 @@
-﻿<div class="container body-content">
+﻿<script>
+    function moveproducts (id){
+     window.location.href = "/Home/Products/"+id;
+    }
+</script>
+
+<style>
+    .categorie:hover{
+        opacity:0.5;
+    }
+</style>
+
+<div class="container body-content">
     <!--==============================
         Breadcumb
     ============================== -->
@@ -14,126 +26,16 @@
         </div>
     </div>
 
-    <!--==============================
-           Service Area
-       ==============================-->
-    <section class="vs-service-wrapper vs-service-layout1 space-top">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-3">
-                    <div class="vs-service">
-                        <div class="service-icon">
-                            <span class="icon text-theme bg-white"><i class="fa-3x flaticon-spa"></i></span>
-                            <span class="bg-icon ani-moving icon-6x text-theme"><i class="flaticon-stones"></i></span>
-                        </div>
-                        <div class="service-content">
-                            <h3 class="service-title h4"><a href="service-details.html">Sports Massage</a></h3>
-                            <p>Experience a metamorphosis from tension to tranquility Massage, facials, salon</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3">
-                    <div class="vs-service">
-                        <div class="service-icon">
-                            <span class="icon text-theme bg-white"><i class="fa-3x flaticon-stones-1"></i></span>
-                            <span class="bg-icon ani-moving icon-6x text-theme"><i class="flaticon-mortar"></i></span>
-                        </div>
-                        <div class="service-content">
-                            <h3 class="service-title h4"><a href="service-details.html">Hot Stone Massage</a></h3>
-                            <p>Experience a metamorphosis from tension to tranquility Massage, facials, salon</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3">
-                    <div class="vs-service">
-                        <div class="service-icon">
-                            <span class="icon text-theme bg-white"><i class="fa-3x flaticon-facial-treatment"></i></span>
-                            <span class="bg-icon ani-moving icon-6x text-theme"><i class="flaticon-teapot"></i></span>
-                        </div>
-                        <div class="service-content">
-                            <h3 class="service-title h4"><a href="service-details.html">Facial & Therophy</a></h3>
-                            <p>Experience a metamorphosis from tension to tranquility Massage, facials, salon</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3">
-                    <div class="vs-service">
-                        <div class="service-icon">
-                            <span class="icon text-theme bg-white"><i class="fa-3x flaticon-cosmetics"></i></span>
-                            <span class="bg-icon ani-moving icon-6x text-theme"><i class="flaticon-lotus"></i></span>
-                        </div>
-                        <div class="service-content">
-                            <h3 class="service-title h4"><a href="service-details.html">Parlar & Beauty</a></h3>
-                            <p>Experience a metamorphosis from tension to tranquility Massage, facials, salon</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-3">
-                    <div class="vs-service">
-                        <div class="service-icon">
-                            <span class="icon text-theme bg-white"><i class="fa-3x flaticon-beauty-treatment"></i></span>
-                            <span class="bg-icon ani-moving icon-6x text-theme"><i class="flaticon-cosmetics-1"></i></span>
-                        </div>
-                        <div class="service-content">
-                            <h3 class="service-title h4"><a href="service-details.html">Eye & Shadow</a></h3>
-                            <p>Experience a metamorphosis from tension to tranquility Massage, facials, salon</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-3">
-                    <div class="vs-service">
-                        <div class="service-icon">
-                            <span class="icon text-theme bg-white"><i class="fa-3x flaticon-wax"></i></span>
-                            <span class="bg-icon ani-moving icon-6x text-theme"><i class="flaticon-essential"></i></span>
-                        </div>
-                        <div class="service-content">
-                            <h3 class="service-title h4"><a href="service-details.html">Waxing</a></h3>
-                            <p>Experience a metamorphosis from tension to tranquility Massage, facials, salon</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-3">
-                    <div class="vs-service">
-                        <div class="service-icon">
-                            <span class="icon text-theme bg-white"><i class="fa-3x flaticon-spa-1"></i></span>
-                            <span class="bg-icon ani-moving icon-6x text-theme"><i class="flaticon-beauty-treatment"></i></span>
-                        </div>
-                        <div class="service-content">
-                            <h3 class="service-title h4"><a href="service-details.html">Relaxation room</a></h3>
-                            <p>Experience a metamorphosis from tension to tranquility Massage, facials, salon</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-3">
-                    <div class="vs-service">
-                        <div class="service-icon">
-                            <span class="icon text-theme bg-white"><i class="fa-3x flaticon-stones"></i></span>
-                            <span class="bg-icon ani-moving icon-6x text-theme"><i class="flaticon-shower"></i></span>
-                        </div>
-                        <div class="service-content">
-                            <h3 class="service-title h4"><a href="service-details.html">Eye & Shadow</a></h3>
-                            <p>Experience a metamorphosis from tension to tranquility Massage, facials, salon</p>
-                        </div>
-                    </div>
-                </div>
-
-
-            </div>
-        </div>
-    </section>
+ 
     <section>
 
         <div class=" pt-60 border-top border-light-theme">
             <div class="row">
                 <div class="col-md-6 mb-30 mb-md-0">
-                    <img style="cursor:grab" src="~/Content/assets/img/products/8F7A9411.jpg" alt="Gallrey Image" class="w-100 categorie" id="cat1">
+                    <img onclick="moveproducts(this.id)" style="cursor:grab" src="~/Content/assets/img/products/8F7A9411.jpg" alt="Gallrey Image" class="w-100 categorie" id="cat1">
                 </div>
                 <div class="col-md-6">
-                    <img style="cursor:grab" src="~/Content/assets/img/products/8F7A9409.jpg" alt="Gallrey Image" class="w-100 categorie" id="cat2">
+                    <img onclick="moveproducts(this.id)" style="cursor:grab" src="~/Content/assets/img/products/8F7A9409.jpg" alt="Gallrey Image" class="w-100 categorie" id="cat2">
                 </div>
 
             </div>
@@ -144,9 +46,3 @@
 
 </div>
 
-
-<script type="text/javascript">
-   $(document).ready(function(){
-    window.location.href = "/Home/About"
-    });
-    </script>
