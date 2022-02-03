@@ -221,7 +221,7 @@
 
                     </div>
                     <div class="col-6 col-lg-4">
-                        <img class=" wow fadeIn imgperso" id="imgpers" data-wow-delay="0.3s" src="~/Content/assets/img/products/8F7A9054-2.jpg" alt="feature Image">
+                        <img class=" wow fadeIn imgperso" id="imgpers" data-wow-delay="0.3s" src="~/Content/assets/img/products/8F7A9059.jpg" alt="feature Image">
                         <img id="blah" class=" wow fadeIn" src="#" alt="your image" style="z-index:999999" data-wow-delay="0.4s" />
                     </div>
                     <div class="col-3 col-lg-4 left-right-perso">
@@ -298,9 +298,9 @@
         </div>
     </section>
     <div class="form-group col-12 mb-0 text-center">
-        <button type="button" id="confirmer"  class="vs-btn wave-style1">Make Appointment<i class="far fa-arrow-right"></i></button>
+        <button type="button" id="confirmer"  class="vs-btn wave-style1">Next<i class="far fa-arrow-right"></i></button>
         <br />
-        <label id="error1"> *Make sure that you selected all filters </label>
+        <label style="color: palevioletred; margin-top:19px" id="error1"> *Make sure that you selected all filters </label>
         
     </div>
 
@@ -599,7 +599,7 @@ $('.imgperso').attr('src','../Content/assets/img/products/8F7A9019.jpg');
    
     if(color=="" || bordercolor=="" || sizeproduct=="" || typeproduct=="" || logo=="" || tissue==""){
      $('#error1').show();
-     $('#exampleModal').modal('show');
+    
        
     }else{
     $('#error1').hide();
