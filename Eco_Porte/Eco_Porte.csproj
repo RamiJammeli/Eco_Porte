@@ -337,6 +337,8 @@
     <Content Include="Content\assets\img\price\price-img-1-2.png" />
     <Content Include="Content\assets\img\price\price-img-1-3.png" />
     <Content Include="Content\assets\img\price\price-img-1-4.png" />
+    <Content Include="Content\assets\img\products\1.jpg" />
+    <Content Include="Content\assets\img\products\2.jpg" />
     <Content Include="Content\assets\img\products\8F7A8983.jpg" />
     <Content Include="Content\assets\img\products\8F7A8987.jpg" />
     <Content Include="Content\assets\img\products\8F7A8989.jpg" />
@@ -432,6 +434,7 @@
     <Content Include="Content\assets\img\products\carous1.jpg" />
     <Content Include="Content\assets\img\products\carous2.jpg" />
     <Content Include="Content\assets\img\products\carous3.jpg" />
+    <Content Include="Content\assets\img\products\chamber.jpg" />
     <Content Include="Content\assets\img\products\chambre\1.jpg" />
     <Content Include="Content\assets\img\products\chambre\10.jpg" />
     <Content Include="Content\assets\img\products\chambre\11.jpg" />
