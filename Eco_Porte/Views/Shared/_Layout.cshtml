@@ -35,6 +35,9 @@
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="msapplication-TileImage" content="~/Content/assets/img/favicons/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
+    <link href='//fonts.googleapis.com/css?family=Montserrat:thin,extra-light,light,100,200,300,400,500,600,700,800'
+          rel='stylesheet' type='text/css'>
 
     <!--==============================
         All CSS File
@@ -117,8 +120,43 @@
                             </li>
                             <li>@Html.ActionLink("A propos", "About", "Home")</li>
 
-                            <li>
+                            <li class="mega-menu-wrap menu-item-has-children">
                                 @Html.ActionLink("Produits", "Service", "Home")
+                                <ul class="mega-menu">
+                                    <li>
+                                        <a href="shop.html">Pagelist 1</a>
+                                        <ul>
+                                            <li><a href="index.html">Home One</a></li>
+                                            <li><a href="index-2.html">Home Two</a></li>
+                                            <li><a href="index-3.html">Home Three</a></li>
+                                            <li><a href="index-4.html">Home Four <span class="sup-label">New</span></a></li>
+                                            <li><a href="index-onepage.html">Home One (One Page)</a></li>
+                                            <li><a href="index-2-onepage.html">Home Two (One Page)</a></li>
+                                            <li><a href="index-3-onepage.html">Home Three (One Page)</a></li>
+                                            <li><a href="index-4-onepage.html">Home Four (One Page) <span class="sup-label">New</span></a></li>
+                                            <li>@Html.ActionLink("Qui sommes nous", "About", "Home")</li>
+                                            <li><a href="feature.html">Feature</a></li>
+                                            <li><a href="price.html">Price Plan</a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="#">Pagelist 2</a>
+                                        <ul>
+                                            <li><a href="faq.html">FAQ Page</a></li>
+                                            <li><a href="team.html">Team</a></li>
+                                            <li><a href="team-details.html">Team Details</a></li>
+                                            <li>@Html.ActionLink("Services", "Service", "Home")</li>
+                                            <li><a href="service-details.html">Services Details</a></li>
+                                            <li><a href="gallery.html">Portfolio</a></li>
+                                            <li><a href="gallery-details.html">Portfolio Details</a></li>
+                                            <li><a href="appointment.html">Appointment</a></li>
+                                            <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
+                                            <li><a href="error.html">Error</a></li>
+                                            <li><a href="blog.html">News</a></li>
+                                        </ul>
+                                    </li>
+                                   
+                                </ul>
 
                             </li>
 
@@ -158,14 +196,20 @@
     <header class="header-wrapper header-layout2 px-85 py-3 py-lg-0">
         <div class="container-fluid position-relative">
             <div class="row align-items-center">
-                <div class="col-6 col-lg-3">
-                    <div class="header-logo">
-                        <a href="@Url.Action("Index", "Home")"><img style="width:50%" src="~/Content/assets/img/products/logo2.png" title="Mixlax - Spa Beauty Salon HTML Template" alt="Mixlax - Spa Beauty Salon HTML Template"></a>
+                <div class="col-lg-12 text-right d-none d-lg-block">
+                    <div class="header-btn">
+                        <a href="#" class="icon-btn mr-2 searchBoxTggler bg-theme"><i class="far fa-search"></i></a>
+                        <a href="#" class="icon-btn sideMenuToggler bg-theme"><i class="fal fa-th-large"></i></a>
+                    </div>
+                </div>
+                <div class="col-6 col-lg-12 ">
+                    <div class="header-logo ">
+                        <a class="d-flex justify-content-lg-center" href="@Url.Action("Index", "Home")"><img style="width:20%" src="~/Content/assets/img/products/logo2.png" title="Mixlax - Spa Beauty Salon HTML Template" alt="Mixlax - Spa Beauty Salon HTML Template"></a>
                     </div>
                 </div>
 
-                <div class="col-lg-7 position-static d-none d-lg-block">
-                    <nav class="main-menu menu-style1 mobile-menu-active">
+                <div class="col-lg-12 position-static d-none d-lg-block">
+                    <nav class="main-menu menu-style1 mobile-menu-active d-flex justify-content-lg-center">
                         <ul>
                             <li>
                                 @Html.ActionLink("Accueil", "Index", "Home")
@@ -173,8 +217,43 @@
                             </li>
                             <li>@Html.ActionLink("A propos", "About", "Home")</li>
 
-                            <li>
-                                @Html.ActionLink("Produits", "Service", "Home")
+                            <li class="mega-menu-wrap menu-item-has-children">
+                               <a> Products </a>
+                                <ul class="mega-menu mega-web">
+                                    <li>
+                                        <a href="shop.html">Pagelist 1</a>
+                                        <ul>
+                                            <li><a href="index.html">Home One</a></li>
+                                            <li><a href="index-2.html">Home Two</a></li>
+                                            <li><a href="index-3.html">Home Three</a></li>
+                                            <li><a href="index-4.html">Home Four <span class="sup-label">New</span></a></li>
+                                            <li><a href="index-onepage.html">Home One (One Page)</a></li>
+                                            <li><a href="index-2-onepage.html">Home Two (One Page)</a></li>
+                                            <li><a href="index-3-onepage.html">Home Three (One Page)</a></li>
+                                            <li><a href="index-4-onepage.html">Home Four (One Page) <span class="sup-label">New</span></a></li>
+                                            <li>@Html.ActionLink("Qui sommes nous", "About", "Home")</li>
+                                            <li><a href="feature.html">Feature</a></li>
+                                            <li><a href="price.html">Price Plan</a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="#">Pagelist 2</a>
+                                        <ul>
+                                            <li><a href="faq.html">FAQ Page</a></li>
+                                            <li><a href="team.html">Team</a></li>
+                                            <li><a href="team-details.html">Team Details</a></li>
+                                            <li>@Html.ActionLink("Services", "Service", "Home")</li>
+                                            <li><a href="service-details.html">Services Details</a></li>
+                                            <li><a href="gallery.html">Portfolio</a></li>
+                                            <li><a href="gallery-details.html">Portfolio Details</a></li>
+                                            <li><a href="appointment.html">Appointment</a></li>
+                                            <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
+                                            <li><a href="error.html">Error</a></li>
+                                            <li><a href="blog.html">News</a></li>
+                                        </ul>
+                                    </li>
+
+                                </ul>
 
                             </li>
 
@@ -191,12 +270,7 @@
                         </ul>
                     </nav>
                 </div>
-                <div class="col-lg-2 text-right d-none d-lg-block">
-                    <div class="header-btn">
-                        <a href="#" class="icon-btn mr-2 searchBoxTggler bg-theme"><i class="far fa-search"></i></a>
-                        <a href="#" class="icon-btn sideMenuToggler bg-theme"><i class="fal fa-th-large"></i></a>
-                    </div>
-                </div>
+
                 <div class="col-6 d-block d-lg-none text-right">
                     <button type="button" class="vs-menu-toggle text-theme border-theme"><i class="far fa-bars"></i></button>
                 </div>
