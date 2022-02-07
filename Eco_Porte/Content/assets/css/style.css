@@ -1805,10 +1805,15 @@ textarea.form-control.is-invalid {
   --n: 5;
 }
 
-.vs-btn.wave-style1 .vs-btn-icon {
-  background-color: var(--theme-color);
-  color: var(--white-color);
-}
+    .vs-btn.wave-style1{
+        border-radius:12px;
+    }
+
+        .vs-btn.wave-style1 .vs-btn-icon {
+            background-color: var(--theme-color);
+            color: var(--white-color);
+            border-radius: 6px;
+        }
 
 .vs-btn.wave-style1:hover {
   color: var(--white-color);
@@ -5080,7 +5085,7 @@ blockquote.has-text-align-right:after {
 }
 
 .vs-service-layout1 .service-icon:before {
-  content: '';
+  
   position: absolute;
   left: 50%;
   bottom: 0;
@@ -8705,7 +8710,7 @@ table.checkout-ordertable tfoot tr:last-child td {
 
 .space,
 .space-bottom {
-  padding-bottom: 130px;
+  padding-bottom: 80px;
 }
 
 .space-md,
@@ -8715,7 +8720,7 @@ table.checkout-ordertable tfoot tr:last-child td {
 
 .space-md,
 .space-md-bottom {
-  padding-bottom: 100px;
+  padding-bottom: 40px;
 }
 
 /* Medium devices */
@@ -8734,7 +8739,7 @@ table.checkout-ordertable tfoot tr:last-child td {
   }
   .space-md,
   .space-md-bottom {
-    padding-bottom: 30px;
+    padding-bottom: 18px;
   }
 }
 
