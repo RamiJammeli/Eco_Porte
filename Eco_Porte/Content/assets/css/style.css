@@ -5120,10 +5120,14 @@ blockquote.has-text-align-right:after {
   box-shadow: 0px 8px 16px 0px rgba(249, 163, 146, 0.2);
 }
 
+.products-accueil .col-lg-3 .vs-service .service-content h3{
+    color:white;
+}
+
 .vs-service-layout1 .vs-carousel .slick-track > div:nth-child(even) .service-icon .bg-icon,
 .vs-service-layout1 .row > div:nth-child(even) .service-icon .bg-icon {
-  -webkit-animation-delay: 4s;
-          animation-delay: 4s;
+    -webkit-animation-delay: 4s;
+    animation-delay: 4s;
 }
 
 /* Large devices */
