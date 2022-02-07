@@ -81,24 +81,24 @@ Version: 1.0
     01. Variable
 ==================================*/
 :root {
-  --title-color: #211e1c;
-  --body-color: #211e1c;
-  --smoke-color: #f6f6f6;
-  --light-smoke-color: #fafafa;
-  --white-color: #ffffff;
-  --black-color: #000000;
-  --dark-color: #151515;
-  --silver-color: #aeaeae;
-  --yellow-color: #fec624;
-  --success-color: #28a745;
-  --error-color: #dc3545;
-  --border-color: rgba(0,0,0,0.10);
-  --theme-font1: 'Roboto', sans-serif;
-  --theme-font2: 'Prata', serif;
-  --icon-font: 'Font Awesome 5 Pro';
-  --icon-font2: 'Flaticon';
-  --moving-ani-duration: 5s;
-  --ripple-ani-duration: 5s;
+    --title-color: #211e1c;
+    --body-color: #211e1c;
+    --smoke-color: #f6f6f6;
+    --light-smoke-color: #fafafa;
+    --white-color: #ffffff;
+    --black-color: #000000;
+    --dark-color: #151515;
+    --silver-color: #aeaeae;
+    --yellow-color: #fec624;
+    --success-color: #28a745;
+    --error-color: #dc3545;
+    --border-color: rgba(0,0,0,0.10);
+    --theme-font1: 'Montserrat';
+    --theme-font2: 'lato';
+    --icon-font: 'Font Awesome 5 Pro';
+    --icon-font2: 'Flaticon';
+    --moving-ani-duration: 5s;
+    --ripple-ani-duration: 5s;
 }
 
 /*=================================
@@ -2732,7 +2732,7 @@ textarea.form-control.is-invalid {
 }
 
 .menu-style1 > ul > li > a {
-  padding: 49px 0;
+  padding: 29px 0;
 }
 
 /* Medium Large devices */
