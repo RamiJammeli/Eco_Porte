@@ -134,6 +134,7 @@
     </Compile>
     <Compile Include="Models\Categorie.cs" />
     <Compile Include="Models\Produit.cs" />
+    <Compile Include="Models\SousCategorie.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
