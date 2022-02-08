@@ -7186,10 +7186,13 @@ blockquote.has-text-align-right:after {
   }
 }
 
+.references .col-xl-3 .vs-brand img{
+    width:40%;
+    height:40%;
+}
 /* Large devices */
 @media (max-width: 1199px) {
-  .vs-features-layout1 .shape5,
-  .vs-features-layout1 .shape4 {
+    .vs-features-layout1 .shape5, .vs-features-layout1 .shape4 {
     margin-top: -500px;
   }
 }
