@@ -15,15 +15,17 @@ namespace Eco_Porte.Models
         public Double? Prix { get; set; }        
         public String Matiere { get; set; }
         public String Image { get; set; }
-        public virtual Categorie categorie { get; set; }
+       
+        public virtual SousCategorie souscat { get; set; }
 
-        public Produit(int id, string nom, string description, string image, Categorie categorie)
+        public Produit(int id, string nom, string description, string image ,SousCategorie sousCategorie)
         {
             Id = id;
             Nom = nom;
             Description = description;
             Image = image;
-            this.categorie = categorie;
+            souscat = sousCategorie;
+           
         }
     }
 }

@@ -5,18 +5,18 @@ using System.Web;
 
 namespace Eco_Porte.Models
 {
-    public class Categorie
+    public class SousCategorie
     {
         public int Id { get; set; }
         public string Nom { get; set; }
-         
-        public virtual ICollection<SousCategorie> souscats { get; set; }
+        public virtual Categorie categorie { get; set; } 
+        public virtual ICollection<Produit> Produits { get; set; }
 
-        public Categorie(int id, string nom)
+        public SousCategorie(int id, string nom, Categorie categorie)
         {
             Id = id;
             Nom = nom;
-            souscats = new List<SousCategorie>();
+            this.categorie = categorie;
         }
     }
 }
