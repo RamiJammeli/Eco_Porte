@@ -10846,3 +10846,171 @@ table.checkout-ordertable tfoot tr:last-child td {
 }
 
 /*# sourceMappingURL=style.css.map */
+
+
+
+/*------------------- 8.5. Popup detal product  -------------------*/
+.popupdetailproducts {
+    position: fixed;
+    top: 0;
+    left: 50%;
+    background-color: rgba(0, 0, 0, 0.95);
+    height: 0;
+    width: 0;
+    overflow: hidden;
+    z-index: 99999;
+    opacity: 0;
+    visibility: hidden;
+    border-radius: 50%;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+    -webkit-transition: all ease 0.4s;
+    transition: all ease 0.4s;
+}
+
+    .popupdetailproducts button.searchClosedetail {
+        width: 60px;
+        height: 60px;
+        position: absolute;
+        top: 40px;
+        right: 40px;
+        border-width: 1px;
+        border-style: solid;
+        border-color: var(--theme-color);
+        background-color: transparent;
+        font-size: 22px;
+        border-radius: 50%;
+        -webkit-transform: rotate(0);
+        -ms-transform: rotate(0);
+        transform: rotate(0);
+        -webkit-transition: all ease 0.4s;
+        transition: all ease 0.4s;
+    }
+
+    .popupdetailproducts button.searchClosedetail:hover {
+        color: var(--body-color);
+        background-color: #fff;
+        border-color: transparent;
+        border-color: transparent;
+        -webkit-transform: rotate(90deg);
+        -ms-transform: rotate(90deg);
+        transform: rotate(90deg);
+    }
+
+    .popupdetailproducts form {
+        position: absolute;
+        top: 40%;
+        left: 35%;
+        display: inline-block;
+        padding-bottom: 40px;
+        cursor: auto;
+        width: 100%;
+        max-width: 700px;
+        -webkit-transform: translate(-50%, -50%) scale(0);
+        -ms-transform: translate(-50%, -50%) scale(0);
+        transform: translate(-50%, -50%) scale(0);
+        -webkit-transition: -webkit-transform ease 0.4s;
+        transition: -webkit-transform ease 0.4s;
+        transition: transform ease 0.4s;
+        transition: transform ease 0.4s, -webkit-transform ease 0.4s;
+        /* Large devices */
+    }
+
+@media (max-width: 991px) {
+    .popupdetailproducts form {
+        max-width: 600px;
+    }
+
+    .popdet {
+        margin-top: 35%;
+        margin-left: 12%;
+        margin-right: 12%;
+    }
+
+
+}
+
+@media (min-width: 992px) {
+    
+    .popdet {
+        margin-top: 10%;
+        margin-left: 12%;
+    }
+}
+.popupdetailproducts form input {
+    font-size: 18px;
+    height: 70px;
+    width: 100%;
+    border-width: 0;
+    border-bottom-width: 2px;
+    border-style: solid;
+    border-color: var(--theme-color);
+    background-color: transparent;
+    padding-left: 30px;
+    color: #fff;
+    border-radius: 50px;
+}
+
+    .popupdetailproducts form input::-moz-placeholder {
+        color: #fff;
+    }
+
+    .popupdetailproducts form input::-webkit-input-placeholder {
+        color: #fff;
+    }
+
+    .popupdetailproducts form input:-ms-input-placeholder {
+        color: #fff;
+    }
+
+    .popupdetailproducts form input::-ms-input-placeholder {
+        color: #fff;
+    }
+
+    .popupdetailproducts form input::placeholder {
+        color: #fff;
+    }
+
+.popupdetailproducts form button {
+    position: absolute;
+    top: 0px;
+    background-color: transparent;
+    border: none;
+    color: #fff;
+    font-size: 24px;
+    right: 12px;
+    color: var(--white-color);
+    cursor: pointer;
+    width: 70px;
+    height: 70px;
+    -webkit-transition: all ease 0.4s;
+    transition: all ease 0.4s;
+    -webkit-transform: scale(1.001);
+    -ms-transform: scale(1.001);
+    transform: scale(1.001);
+}
+
+    .popupdetailproducts form button:hover {
+        -webkit-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+        transform: scale(1.1);
+    }
+
+.popupdetailproducts.show {
+    opacity: 1;
+    visibility: visible;
+    width: 100.1%;
+    height: 100%;
+    -webkit-transition: all ease 0.4s;
+    transition: all ease 0.4s;
+    border-radius: 0;
+}
+
+    .popupdetailproducts.show form {
+        -webkit-transition-delay: 0.5s;
+        transition-delay: 0.5s;
+        -webkit-transform: translate(-50%, -50%) scale(1);
+        -ms-transform: translate(-50%, -50%) scale(1);
+        transform: translate(-50%, -50%) scale(1);
+    }

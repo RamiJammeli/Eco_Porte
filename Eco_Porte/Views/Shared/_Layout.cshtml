@@ -130,22 +130,22 @@
                                 @Html.ActionLink("Produits", "Service", "Home")
                                 <ul class="mega-menu">
                                     <li>
-                                        <a href="shop.html">Bathroom/spa</a>
+                                        <a>Bathroom/spa</a>
                                         <ul>
 
                                             @foreach (SousCategorie item in souscatspa)
                                             {
-                                                <li><a href="index.html">@item.Nom</a></li>
+                                                <li><a href="~/Home/Products/?idc=@item.categorie.Id&idsub=@item.Id">@item.Nom</a></li>
                                             }
 
                                         </ul>
                                     </li>
                                     <li>
-                                        <a href="#">Chambers</a>
+                                        <a >Chambers</a>
                                         <ul>
                                             @foreach (SousCategorie item in souscatchamber)
                                             {
-                                                <li><a href="index.html">@item.Nom</a></li>
+                                                <li><a href="~/Home/Products/?idc=@item.categorie.Id&idsub=@item.Id">@item.Nom</a></li>
                                             }
                                         </ul>
                                     </li>
@@ -212,27 +212,26 @@
                             <li>@Html.ActionLink("A propos", "About", "Home")</li>
 
                             <li class="mega-menu-wrap menu-item-has-children">
-                               <a> Products </a>
-                                <ul class="mega-menu mega-web">
+                                <a> Products </a>
+                                <ul class="mega-menu">
                                     <li>
-                                        <a href="shop.html">Bathroom/spa</a>
+                                        <a>Bathroom/spa</a>
                                         <ul>
-                                           
+
                                             @foreach (SousCategorie item in souscatspa)
                                             {
-                                                <li><a href="index.html">@item.Nom</a></li>
+                                                <li><a href="~/Home/Products/?idc=@item.categorie.Id&idsub=@item.Id">@item.Nom</a></li>
                                             }
+
                                         </ul>
                                     </li>
                                     <li>
-                                        <a href="#">Chambers</a>
+                                        <a>Chambers</a>
                                         <ul>
-                                     
                                             @foreach (SousCategorie item in souscatchamber)
                                             {
-                                                <li><a href="index.html">@item.Nom</a></li>
+                                                <li><a href="~/Home/Products/?idc=@item.categorie.Id&idsub=@item.Id">@item.Nom</a></li>
                                             }
-
                                         </ul>
                                     </li>
 

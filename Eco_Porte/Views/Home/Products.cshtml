@@ -4,167 +4,103 @@
 <!--==============================
     Breadcumb
 ============================== -->
-<div class="breadcumb-wrapper breadcumb-layout1 background-image link-inherit space mx-100" data-vs-img="../../Content/assets/img/products/chamber.jpg" data-overlay="black" data-opacity="3">
+ @{
+     var cat = Model.FirstOrDefault().souscat.categorie;
+     string image = "../../Content/assets/img/products/chambre/chamber.jpg";
+    
+     if(cat.Nom=="Bathroom & spa")
+     {
+         image = "../../Content/assets/img/products/spa.jpg";
+         
+     }
+
+}
+
+
+<div class="breadcumb-wrapper breadcumb-layout1 background-image link-inherit space mx-100" data-vs-img="@image" data-overlay="black" data-opacity="3">
     <div class="container z-index-common py-10">
         <div class="breadcumb-content">
-            <h1 class="breadcumb-title sec-title-style1 text-white mt-0 mb-2">Chamber</h1>
+            <h1 class="breadcumb-title sec-title-style1 text-white mt-0 mb-2">@cat.Nom</h1>
             <ul class="breadcumb-menu-style1 text-white">
-                <li><a href="index.html"><i class="fal fa-home text-theme"></i>Home</a></li>
-                <li class="active">Portfolio</li>
+                <li><a href="../Index"><i class="fal fa-home text-theme"></i>Home</a></li>
+                <li class="active">Products</li>
             </ul>
         </div>
     </div>
 </div>
+
+
+<!--==============================
+    Popup Search Box
+    ============================== -->
+<div class="popupdetailproducts   ">
+    <button class="searchClosedetail border-theme text-theme"><i class="fal fa-times"></i></button>
+   
+        <div class="row popdet"  >
+            <div class="col-12 col-lg-6">
+                <img src="~/Content/assets/img/products/2.jpg" />
+            </div>
+            <div class="col-12 col-lg-6">
+                <h1 style="color:white"> Description </h1>
+                <p style="color:white" id="descriptionpopup">Details</p>
+            </div>
+        </div>
+    
+</div>
 <!--==============================
     gallery Area
     ==============================-->
-@if (ViewBag.id=="cat1")
-{
-    <div class="vs-gallery-wrapper vs-gallery-layout1 space">
-        <div class="container">
-            <div class="row">
-                <div class="col-xl-8">
-                    <div class="row">
-                        <div class="col-md-6">
-                            <div class="vs-gallery mb-30 wow fadeInUp" data-wow-delay="0.3s">
-                                <div class="vs-gallery-img image-scale-hover">
-                                    <a href="gallery-details.html"><img src="~/Content/assets/img/products/chambre/14.jpg" alt="gallery Image" class="w-100"></a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="vs-gallery mb-30 wow fadeInUp" data-wow-delay="0.3s">
-                                <div class="vs-gallery-img image-scale-hover">
-                                    <a href="gallery-details.html"><img src="~/Content/assets/img/products/chambre/2.jpg" alt="gallery Image" class="w-100"></a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-12">
-                            <div class="vs-gallery mb-30 wow fadeInUp" data-wow-delay="0.3s">
-                                <div class="vs-gallery-img image-scale-hover">
-                                    <a href="gallery-details.html"><img src="~/Content/assets/img/products/chambre/6.jpg" alt="gallery Image" class="w-100"></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-xl-4">
+
+
+
+
+<div class="vs-gallery-wrapper vs-gallery-layout1 space">
+    <div class="container">
+
+        <div class="row">
+
+            @foreach (var item in Model)
+            {
+                <div class="col-4">
                     <div class="vs-gallery mb-30 wow fadeInUp" data-wow-delay="0.3s">
                         <div class="vs-gallery-img image-scale-hover">
-                            <a href="gallery-details.html"><img src="~/Content/assets/img/products/chambre/13.jpg" alt="gallery Image" class="w-100"></a>
+                            <a><img id="imageproduit-@item.Id"  src="~/Content/assets/img/products/chambre/@item.Image"  class="w-100 imageproduct"></a>
+                            <p class="descriptionhide">@Html.Raw(Html.Encode(@item.Description.Replace("\n","<br>"))) </p>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-6 col-xl-4">
-                    <div class="vs-gallery mb-30 wow fadeInUp" data-wow-delay="0.3s">
-                        <div class="vs-gallery-img image-scale-hover">
-                            <a href="gallery-details.html"><img src="~/Content/assets/img/products/chambre/3.jpg" alt="gallery Image" class="w-100"></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-8">
-                    <div class="vs-gallery mb-30 wow fadeInUp" data-wow-delay="0.3s">
-                        <div class="vs-gallery-img image-scale-hover">
-                            <a href="gallery-details.html"><img src="~/Content/assets/img/products/chambre/9.jpg" alt="gallery Image" class="w-100"></a>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-6">
-                            <div class="vs-gallery mb-30 wow fadeInUp" data-wow-delay="0.3s">
-                                <div class="vs-gallery-img image-scale-hover">
-                                    <a href="gallery-details.html"><img src="~/Content/assets/img/products/chambre/12.jpg" alt="gallery Image" class="w-100"></a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="vs-gallery mb-30 wow fadeInUp" data-wow-delay="0.3s">
-                                <div class="vs-gallery-img image-scale-hover">
-                                    <a href="gallery-details.html"><img src="~/Content/assets/img/products/chambre/11.jpg" alt="gallery Image" class="w-100"></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 text-center pt-lg-4">
-                    <a href="#" class="vs-btn wave-style2">Load More<i class="far fa-plus"></i></a>
-                </div>
+            }
+
+            <div class="col-12 text-center pt-lg-4">
+                <a href="#" class="vs-btn wave-style2">Load More<i class="far fa-plus"></i></a>
             </div>
         </div>
     </div>
-}
-else { 
-    <div class="vs-gallery-wrapper vs-gallery-layout1 space">
-        <div class="container">
-            <div class="row">
-                <div class="col-xl-8">
-                    <div class="row">
-                        <div class="col-md-6">
-                            <div class="vs-gallery mb-30 wow fadeInUp" data-wow-delay="0.3s">
-                                <div class="vs-gallery-img image-scale-hover">
-                                    <a href="gallery-details.html"><img src="~/Content/assets/img/gallery/gallery-3-1.jpg" alt="gallery Image" class="w-100"></a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="vs-gallery mb-30 wow fadeInUp" data-wow-delay="0.3s">
-                                <div class="vs-gallery-img image-scale-hover">
-                                    <a href="gallery-details.html"><img src="~/Content/assets/img/gallery/gallery-3-2.jpg" alt="gallery Image" class="w-100"></a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-12">
-                            <div class="vs-gallery mb-30 wow fadeInUp" data-wow-delay="0.3s">
-                                <div class="vs-gallery-img image-scale-hover">
-                                    <a href="gallery-details.html"><img src="~/Content/assets/img/gallery/gallery-3-4.jpg" alt="gallery Image" class="w-100"></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-xl-4">
-                    <div class="vs-gallery mb-30 wow fadeInUp" data-wow-delay="0.3s">
-                        <div class="vs-gallery-img image-scale-hover">
-                            <a href="gallery-details.html"><img src="~/Content/assets/img/gallery/gallery-3-3.jpg" alt="gallery Image" class="w-100"></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-xl-4">
-                    <div class="vs-gallery mb-30 wow fadeInUp" data-wow-delay="0.3s">
-                        <div class="vs-gallery-img image-scale-hover">
-                            <a href="gallery-details.html"><img src="~/Content/assets/img/gallery/gallery-3-5.jpg" alt="gallery Image" class="w-100"></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-8">
-                    <div class="vs-gallery mb-30 wow fadeInUp" data-wow-delay="0.3s">
-                        <div class="vs-gallery-img image-scale-hover">
-                            <a href="gallery-details.html"><img src="~/Content/assets/img/gallery/gallery-3-6.jpg" alt="gallery Image" class="w-100"></a>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-6">
-                            <div class="vs-gallery mb-30 wow fadeInUp" data-wow-delay="0.3s">
-                                <div class="vs-gallery-img image-scale-hover">
-                                    <a href="gallery-details.html"><img src="~/Content/assets/img/gallery/gallery-3-7.jpg" alt="gallery Image" class="w-100"></a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="vs-gallery mb-30 wow fadeInUp" data-wow-delay="0.3s">
-                                <div class="vs-gallery-img image-scale-hover">
-                                    <a href="gallery-details.html"><img src="~/Content/assets/img/gallery/gallery-3-8.jpg" alt="gallery Image" class="w-100"></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 text-center pt-lg-4">
-                    <a href="#" class="vs-btn wave-style2">Load More<i class="far fa-plus"></i></a>
-                </div>
-            </div>
-        </div>
-    </div>
+</div>
 
+<script>
+      /*---------- 08. Search Box Popup ----------*/
+  function popupSarchBox2($popupdetailproducts, $imageproduct, $searchClosedetail, $toggleCls) {
+    $($imageproduct).on('click', function (e) {
+      e.preventDefault();
+        $($popupdetailproducts).addClass($toggleCls);
+        var idimg = this.id;
+        $('#descriptionpopup').text($('#'+idimg).parent().parent().children(":last").text());
+    });
+    $($popupdetailproducts).on('click', function (e) {
+      e.stopPropagation();
+      $($popupdetailproducts).removeClass($toggleCls);
+    });
+    
+    $($searchClosedetail).on('click', function (e) {
+      e.preventDefault();
+      e.stopPropagation();
+      $($popupdetailproducts).removeClass($toggleCls);
+    });
+    };
+    $(".descriptionhide").hide();
+  popupSarchBox2('.popupdetailproducts', '.imageproduct', '.searchClosedetail', 'show');
 
-}
+</script>
+
 
