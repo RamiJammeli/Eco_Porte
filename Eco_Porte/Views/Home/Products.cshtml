@@ -65,7 +65,7 @@
                     <div class="vs-gallery mb-30 wow fadeInUp" data-wow-delay="0.3s">
                         <div class="vs-gallery-img image-scale-hover">
                             <a><img id="imageproduit-@item.Id"  src="~/Content/assets/img/products/chambre/@item.Image"  class="w-100 imageproduct"></a>
-                            <p class="descriptionhide">@Html.Raw(Html.Encode(@item.Description.Replace("\n","<br>"))) </p>
+                            <p class="descriptionhide">@(new HtmlString(@item.Description.Replace("\n","<br>")))  </p>
                         </div>
                     </div>
                 </div>
@@ -86,7 +86,7 @@
         $($popupdetailproducts).addClass($toggleCls);
         var idimg = this.id;
         $('#imagepopup').attr("src", $('#' + idimg).attr('src'));
-        $('#descriptionpopup').text($('#'+idimg).parent().parent().children(":last").text());
+        $('#descriptionpopup').html($('#'+idimg).parent().parent().children(":last").html());
     });
     $($popupdetailproducts).on('click', function (e) {
       e.stopPropagation();
@@ -99,7 +99,7 @@
       $($popupdetailproducts).removeClass($toggleCls);
     });
     };
-    $(".descriptionhide").hide();
+  //  $(".descriptionhide").hide();
   popupSarchBox2('.popupdetailproducts', '.imageproduct', '.searchClosedetail', 'show');
 
 </script>

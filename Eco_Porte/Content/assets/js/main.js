@@ -172,8 +172,8 @@
 
   /*----------- 09. Counter Up Active ----------*/
   $('.counter').counterUp({
-    delay: 10,
-    time: 1000
+    delay: 40,
+    time: 3000
   });
 
 
