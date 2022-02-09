@@ -38,7 +38,7 @@
    
         <div class="row popdet"  >
             <div class="col-12 col-lg-6">
-                <img src="~/Content/assets/img/products/2.jpg" />
+                <img id="imagepopup" src="~/Content/assets/img/products/2.jpg" />
             </div>
             <div class="col-12 col-lg-6">
                 <h1 style="color:white"> Description </h1>
@@ -85,6 +85,7 @@
       e.preventDefault();
         $($popupdetailproducts).addClass($toggleCls);
         var idimg = this.id;
+        $('#imagepopup').attr("src", $('#' + idimg).attr('src'));
         $('#descriptionpopup').text($('#'+idimg).parent().parent().children(":last").text());
     });
     $($popupdetailproducts).on('click', function (e) {
