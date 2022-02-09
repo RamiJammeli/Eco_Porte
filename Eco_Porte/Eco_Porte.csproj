@@ -430,6 +430,9 @@
     <Content Include="Content\assets\img\products\aboutushome.jpg" />
     <Content Include="Content\assets\img\products\aboutushome.png" />
     <Content Include="Content\assets\img\products\aboutusindex.jpg" />
+    <Content Include="Content\assets\img\products\aboutuspage.jpg" />
+    <Content Include="Content\assets\img\products\badira.png" />
+    <Content Include="Content\assets\img\products\belazur.png" />
     <Content Include="Content\assets\img\products\blog.jpg" />
     <Content Include="Content\assets\img\products\carou33.jpg" />
     <Content Include="Content\assets\img\products\carous1.jpg" />
@@ -453,8 +456,10 @@
     <Content Include="Content\assets\img\products\chambre\9.jpg" />
     <Content Include="Content\assets\img\products\comingsoon.jpg" />
     <Content Include="Content\assets\img\products\contactus.jpg" />
+    <Content Include="Content\assets\img\products\darjeld.png" />
     <Content Include="Content\assets\img\products\disposable.png" />
     <Content Include="Content\assets\img\products\hygien.png" />
+    <Content Include="Content\assets\img\products\lacigale.png" />
     <Content Include="Content\assets\img\products\leaf.png" />
     <Content Include="Content\assets\img\products\logo2.png" />
     <Content Include="Content\assets\img\products\logoecoporte.png" />
@@ -462,7 +467,12 @@
     <Content Include="Content\assets\img\products\returns.jpeg" />
     <Content Include="Content\assets\img\products\returns.jpg" />
     <Content Include="Content\assets\img\products\service.jpg" />
+    <Content Include="Content\assets\img\products\servicesbread.jpg" />
+    <Content Include="Content\assets\img\products\sheraton.png" />
+    <Content Include="Content\assets\img\products\spa.jpg" />
     <Content Include="Content\assets\img\products\tong.png" />
+    <Content Include="Content\assets\img\products\unnamed.png" />
+    <Content Include="Content\assets\img\products\Villa-Bleue.png" />
     <Content Include="Content\assets\img\products\woman.png" />
     <Content Include="Content\assets\img\service\service-details-1.jpg" />
     <Content Include="Content\assets\img\service\service-details-2.jpg" />
@@ -472,10 +482,13 @@
     <Content Include="Content\assets\img\service\service-img-1-4.jpg" />
     <Content Include="Content\assets\img\shape\about-bg-patten-1.png" />
     <Content Include="Content\assets\img\shape\about-bg-patten-2.png" />
+    <Content Include="Content\assets\img\shape\bamboo-bg.svg" />
     <Content Include="Content\assets\img\shape\flower-1-1.png" />
     <Content Include="Content\assets\img\shape\flower-1-2.png" />
     <Content Include="Content\assets\img\shape\hero-shape-3-1.png" />
     <Content Include="Content\assets\img\shape\leaf-icon-1.png" />
+    <Content Include="Content\assets\img\shape\sidecar.jpg" />
+    <Content Include="Content\assets\img\shape\sidecar2.jpg" />
     <Content Include="Content\assets\img\shop\shop-1.jpg" />
     <Content Include="Content\assets\img\shop\shop-2.jpg" />
     <Content Include="Content\assets\img\shop\shop-3.jpg" />
