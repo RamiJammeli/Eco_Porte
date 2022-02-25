@@ -120,7 +120,7 @@ namespace Eco_Porte.Controllers
             ViewBag.id = idc;
             var categorieselected = categories.Where(c => c.Id == idc).FirstOrDefault();
             var listproduit= categorieselected.souscats.Where(s => s.Id == idsub).FirstOrDefault().Produits;
-            return View(listproduit);
+            return View(listproduit); 
         }
 
 
