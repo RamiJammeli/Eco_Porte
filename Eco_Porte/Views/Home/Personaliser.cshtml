@@ -86,7 +86,7 @@
        
         border: 2px solid #dbdbdb;
         border-radius: 0;
-        height: calc(2em + 0.75rem + 2px);
+        
     }
 
     .btnfile {
@@ -140,7 +140,7 @@
 
     <section class="vs-features-wrapper vs-features-layout1 space-bottom" id="feature">
         <div class="container">
-            <div style="background-color: rgba(249, 163, 146, 0.15) ;top:110px;padding-top:0px; padding-bottom:0px" class="inner-wrapper px-4 px-lg-0 space-md position-relative ">
+            <div style="background-color: var(--theme-color) ;top:110px;padding-top:0px; padding-bottom:0px" class="inner-wrapper px-4 px-lg-0 space-md position-relative ">
 
                 <div class="row">
                     <div class="col-3 col-lg-4 left-right-perso">
@@ -261,7 +261,7 @@
                         <div class=" col-12 subfilters" id="subfiltre-logo" style="padding-bottom:30px">
                             <div class="d-flex justify-content-center wrapper align-items-center">
                                 <input type="file" name="file" accept="image/png, image/jpeg" id="file" class="file" onchange="readURL(this);">
-                                <div class="d-flex">
+                                <div class="d-flex" style="height:32px">
                                     <input type="text" name="file-name" id="file-name" class="file-name" readonly="readonly">
                                     <input type="button" class="btn btnfile" value="Upload">
                                 </div>
@@ -298,7 +298,7 @@
         </div>
     </section>
     <div class="form-group col-12 mb-0 text-center">
-        <button type="button" id="confirmer"  class="vs-btn wave-style1">Next<i class="far fa-arrow-right"></i></button>
+        <button style="margin-top:5%" type="button" id="confirmer"  class="vs-btn wave-style1">Next<i class="far fa-arrow-right"></i></button>
         <br />
         <label style="color: palevioletred; margin-top:19px" id="error1"> *Make sure that you selected all filters </label>
         

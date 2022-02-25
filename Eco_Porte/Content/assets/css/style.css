@@ -719,7 +719,7 @@ h6 {
 .nice-select,
 .form-control {
   border-radius: 0;
-  height: 60px;
+
   padding: 0 30px;
   padding-right: 60px;
   border: 1px solid var(--border-color);
@@ -920,7 +920,7 @@ label {
 .form-group > i {
   position: absolute;
   right: 40px;
-  top: 20px;
+  top: 11px;
   font-size: 18px;
   color: var(--theme-color);
 }
@@ -1009,7 +1009,7 @@ textarea.form-control.is-invalid {
   border: 1px solid var(--border-color);
   z-index: 2;
   cursor: pointer;
-  line-height: 60px;
+  line-height: 30px;
   width: 100%;
   float: none;
   z-index: 42;
@@ -6384,8 +6384,13 @@ blockquote.has-text-align-right:after {
   z-index: 5;
 }
 
+#feature .container .inner-wrapper .row .col-3 .fadeInUp .media-body h3{
+    color: darkgrey;
+    margin-top:10px;
+}
+
 .vs-features-layout1 .feature-text:last-child {
-  margin-bottom: 0;
+    margin-bottom: 0;
 }
 
 .vs-features-layout1 .media-icon {
