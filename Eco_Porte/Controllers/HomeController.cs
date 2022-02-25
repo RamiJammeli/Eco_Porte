@@ -9,7 +9,7 @@ namespace Eco_Porte.Controllers
 {
     public class HomeController : Controller
     {
-        List<Categorie> categories;
+        List<Categorie> categories;   
 
         public HomeController()
         {
