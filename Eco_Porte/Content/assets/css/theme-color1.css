@@ -45,7 +45,7 @@ a:hover {
 .quantity-box button,
 .bg-light-theme,
 .icon-btn .style1 {
-    background-color: #cbc0b6;
+    background-color: var(--theme-color);
 }
 
 .hero-box1 {
