@@ -141,7 +141,7 @@
                                         </ul>
                                     </li>
                                     <li>
-                                        <a >Chambers</a>
+                                        <a>Chambers</a>
                                         <ul>
                                             @foreach (SousCategorie item in souscatchamber)
                                             {
@@ -149,7 +149,7 @@
                                             }
                                         </ul>
                                     </li>
-                                   
+
                                 </ul>
 
                             </li>
@@ -263,88 +263,84 @@
 
 
 
-        @RenderBody()
+    @RenderBody()
 
 
 
 
     <!--==============================
-             Footer Area
-     ==============================-->
-    <footer class="footer-wrapper footer-layout1">
-        <div class="footer-widget footer-widget-layout1 pt-100 pb-70">
+            Footer Area
+    ==============================-->
+    <footer class="footer-wrapper footer-layout2 position-relative bg-body">
+        <div class="shape1 ani-moving-y position-absolute"><img src="~/Content/assets/img/shape/flower-1-2.png" alt="Flowers"></div>
+        <div class="footer-widget footer-widget-layout2 pt-100 pb-70">
             <div class="container">
-                <div class="row justify-content-xl-center gutters-40">
-                    <div class="col-lg-4 col-xl-4">
+                <div class="row gutters-40 justify-content-between">
+                    <div class=" col-lg-4">
                         <div class="widget  ">
-                            <div class="vs-widget-about">
+                            <div class="vs-widget-about pr-lg-4">
                                 <div class="widget-about-logo mb-20 mb-lg-25">
-                                    <a href="@Url.Action("Index", "Home")">
-                                        <img style="width:50%" src="~/Content/assets/img/products/logo2.png" alt="Clianio">
+                                    <a href="index.html">
+                                        <img src="~/Content/assets/img/products/logo2.png" alt="Clianio">
                                     </a>
                                 </div>
-                                <p class="widget-about-text mb-20">Main practice areas of the firm include Admiralty, Maritime and Ship Arrest, Arbitration, Mediation and ADRs, Aviation Matters, Banking, Finance & Investment, Capital Market, Commercial Litigation, Commercial Transactions, International Trade, Construction & Engineering., Foreign Investment and Business Set-Up. firm include Admiralty, Maritime and Ship Arrest, Arbitration</p>
-                                <a href="@Url.Action("Contact", "Home")" class="vs-btn wave-style1">Make Appointment<i class="far fa-arrow-right"></i></a>
+                                <p class="widget-about-text text-white mb-20">
+                                    In Ecoporté we go above and beyond, providing you with the highest quality
+                                    products that sets your brand apart and enhances your customers’ experience to
+                                    the top level.
+                                </p>
+                                <p class="contact-info-style1 text-white"><i class="far fa-phone text-theme"></i><a href="tel:+098986876765">+098 986 8767 65</a></p>
+                                <p class="contact-info-style1 text-white"><i class="fal fa-envelope text-theme"></i><a href="mailto:mixlax@email.com">mixlax@email.com</a></p>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-6 col-lg-4 col-xl-4">
-                        <div class="widget  ">
-                            <div class="vs-widget-contact contact-widget-style2">
-                                <span class="text-theme mb-4 d-block"><i class="fa-4x flaticon-contact"></i></span>
-                                <h4 class="mb-15">Contact Us</h4>
-                                <p class="mb-10">Phone: +097 986 875 98 8</p>
-                                <p class="mb-10">Email: info@webmail.com</p>
-                                <p class="mb-25">Office: 14/A, Brown Tower, NewYork, US</p>
-                                <a href="@Url.Action("Contact", "Home")" class="vs-btn outline-style1">Get Directions</a>
+                    
+                   <div class="col-md-6  col-lg-4">
+                        <div class="widget widget_nav_menu   ">
+                            <h3 class="widget_title text-white">Our Pages</h3>
+                            <div class="menu-all-pages-container style-white">
+                                <ul class="menu">
+                                    <li><a href="#">How It Works</a></li>
+                                    <li><a href="#">Our History</a></li>
+                                    <li><a href="#">Services</a></li>
+                                    <li><a href="#">Our Products</a></li>
+                                    
+                                    <li><a href="#">Home Service</a></li>
+                                    <li><a href="#">About Us</a></li>
+                                    <li><a href="#">FAQ</a></li>
+                                    
+                                    
+                                    <li><a href="#">Contact</a></li>
+                                    
+                                </ul>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-md-6 col-lg-4 col-xl-4">
-                        <div class="widget   ">
-                            <h3 class="widget_title">Latest Posts</h3>
-                            <div class="vs-widget-recent-post has-light-border">
-                                <div class="recent-post media">
-                                    <div class="media-img">
-                                        <img src="~/Content/assets/img/widget/post-thumb-1.jpg" alt="Recent Post Image">
-                                    </div>
-                                    <div class="media-body pl-20">
-                                        <span><i class="fal fa-calendar-alt text-theme"></i> 05 June, 2020.</span>
-                                        <h4 class="h5 mb-0">@Html.ActionLink("Managing Partner along with Senior Counsels.", "Blog", "Home")</h4>
-                                    </div>
-                                </div>
-                                <div class="recent-post media">
-                                    <div class="media-img">
-                                        <img src="~/Content/assets/img/widget/post-thumb-2.jpg" alt="Recent Post Image">
-                                    </div>
-                                    <div class="media-body pl-20">
-                                        <span><i class="fal fa-calendar-alt text-theme"></i> 28 June, 2020.</span>
-                                        <h4 class="h5 mb-0">@Html.ActionLink("Managing Partner along with Senior Counsels.", "Blog", "Home")</h4>
-                                    </div>
-                                </div>
-                                <div class="recent-post media">
-                                    <div class="media-img">
-                                        <img src="~/Content/assets/img/widget/post-thumb-3.jpg" alt="Recent Post Image">
-                                    </div>
-                                    <div class="media-body pl-20">
-                                        <span><i class="fal fa-calendar-alt text-theme"></i> 30 July, 2020.</span>
-                                        <h4 class="h5 mb-0">@Html.ActionLink("Managing Partner along with Senior Counsels.", "Blog", "Home")</h4>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
                     </div>
                 </div>
             </div>
         </div>
-        <div class="footer-copyright bg-light-theme  py-3 link-inherit">
+        <div class="footer-copyright bg-black  py-3 link-inherit">
             <div class="container">
                 <div class="row align-items-center">
                     <div class="col-lg-6 text-center text-lg-left">
-                        <p class="mb-0 text-bold">Copyright <i class="fal fa-copyright"></i> 2020 <a href="@Url.Action("Index", "Home")">EcoPorte</a>. All rights reserved by <a href="https://themeforest.net/user/vecuro">Vecuro</a>.</p>
+                        <p class="mb-0 text-bold text-white">Copyright <i class="fal fa-copyright"></i> 2020 <a href="index.html">Mixlax</a>. All rights reserved by <a href="https://themeforest.net/user/vecuro">Vecuro</a>.</p>
                     </div>
                     <div class="col-lg-6 text-lg-right d-none d-lg-inline-block">
-                        <ul class="social-links links-hover-border">
+                        <ul class="social-links links-hover-border text-white">
                             <li><a href="https://google.com"><i class="fab fa-facebook-f"></i></a></li>
                             <li><a href="https://google.com"><i class="fab fa-twitter"></i></a></li>
                             <li><a href="https://google.com"><i class="fab fa-linkedin-in"></i></a></li>
@@ -356,6 +352,7 @@
             </div>
         </div>
     </footer>
+
 
     <!--==============================
     Sidemenu
