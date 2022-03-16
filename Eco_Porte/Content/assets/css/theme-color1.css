@@ -45,7 +45,7 @@ a:hover {
 .quantity-box button,
 .bg-light-theme,
 .icon-btn .style1 {
-    background-color: var(--theme-color);
+    background-image: linear-gradient(to right, #3a3a2d, #413831, #413737, #3d393c, #3a3a3b);
 }
 
 .hero-box1 {

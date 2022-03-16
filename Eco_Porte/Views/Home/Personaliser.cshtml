@@ -3,24 +3,24 @@
     ViewBag.Title = "Personaliser";
 }
 <script>
-      function readURL(input) {
-  if (input.files && input.files[0]) {
-    var reader = new FileReader();
-    reader.onload = function (e) {
-      $('#blah')
-        .attr('src', e.target.result)
-        .width(50)
-        .height(50);
-     $('#blah').show();
-    };
-    reader.readAsDataURL(input.files[0]);
-  }
-}
+    function readURL(input) {
+        if (input.files && input.files[0]) {
+            var reader = new FileReader();
+            reader.onload = function (e) {
+                $('#blah')
+                    .attr('src', e.target.result)
+                    .width(50)
+                    .height(50);
+                $('#blah').show();
+            };
+            reader.readAsDataURL(input.files[0]);
+        }
+    }
 
 </script>
 <style>
-    .feature-title{
-        cursor:grab;
+    .feature-title {
+        cursor: grab;
     }
 
     #imgpers {
@@ -34,6 +34,12 @@
     .left-right-perso {
         z-index: 1000;
     }
+
+    .modal-content {
+        background-image: linear-gradient(to right top, #624045, #5d434d, #584652, #524955, #4e4c55);
+    }
+
+   
 
     @@media all and (min-width: 992px) {
         .left-right-perso {
@@ -69,7 +75,7 @@
     }
 
     /*input file*/
-    
+
 
     .file {
         display: none;
@@ -83,10 +89,8 @@
         box-sizing: border-box;
         font-size: 15px;
         vertical-align: middle;
-       
         border: 2px solid #dbdbdb;
         border-radius: 0;
-        
     }
 
     .btnfile {
@@ -105,16 +109,17 @@
         margin-left: 1rem;
     }
 
-       
 
-    
-   /*********/
 
-   /**modal*/
-    .labelpopup{
-        margin-top:18px;
+
+    /*********/
+
+    /**modal*/
+    .labelpopup {
+        margin-top: 5px;
+        color: white;
     }
-   /*****/
+    /*****/
 
 </style>
 
@@ -298,10 +303,10 @@
         </div>
     </section>
     <div class="form-group col-12 mb-0 text-center">
-        <button style="margin-top:5%" type="button" id="confirmer"  class="vs-btn wave-style1">Next<i class="far fa-arrow-right"></i></button>
+        <button style="margin-top:5%" type="button" id="confirmer" class="vs-btn wave-style1">Next<i class="far fa-arrow-right"></i></button>
         <br />
         <label style="color: palevioletred; margin-top:19px" id="error1"> *Make sure that you selected all filters </label>
-        
+
     </div>
 
 
@@ -309,65 +314,70 @@
         <div class="modal-dialog modal-lg" role="document">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Details</h5>
+                    <h5 style="color:white" class="modal-title" id="exampleModalLabel">Details</h5>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
+                        <span style="color:white" aria-hidden="true">&times;</span>
                     </button>
                 </div>
                 <div class="modal-body">
-                    <section class="contact-form-wrapper contact-form-layout1 space-bottom" style=" padding-bottom: 20px; ">
+                    <section class="contact-form-wrapper contact-form-layout1 space-bottom" style="background-color: transparent; padding-bottom: 20px; ">
                         <div class="container">
-                            <div class="inner-wrapper bg-light-theme space px-100" style=" padding-top: 20px; padding-bottom: 20px; ">
-                                
+                            <div class="inner-wrapper bg-light-theme space px-100" style="background-image:none;  padding: 20px; ">
+
                                 <form action="mail.php" method="POST" class="contact-form contact-form-style1 input-white">
-                                    <div class="row gutters-20">
-                                        <div class="form-group col-12 row">
+
+                                    <div class="row ">
+                                        <div class="form-group col-12 col-lg-6 row">
                                             <div class="col-2">
                                                 <label class="labelpopup"> Color</label>
                                             </div>
-                                            <div class="col-9">
+                                            <div class="col-10">
                                                 <input type="text" name="color" id="modal-color" class="form-control" placeholder="Color">
                                             </div>
 
                                         </div>
-                                        <div class="form-group col-md-12 row">
+                                        <div class="form-group col-12 col-lg-6 row">
                                             <div class="col-2">
                                                 <label class="labelpopup"> Tissue</label>
                                             </div>
-                                            <div class="col-9">
+                                            <div class="col-10">
                                                 <input type="text" name="tissue" id="modal-tissue" class="form-control" placeholder="tissue">
-                                 
+
                                             </div>
                                         </div>
+                                    </div>
 
-
-                                        <div class="form-group col-md-12 row">
+                                    <div class="row ">
+                                        <div class="form-group col-12 col-lg-6 row">
                                             <div class="col-2">
                                                 <label class="labelpopup"> Border</label>
                                             </div>
-                                            <div class="col-9">
+                                            <div class="col-10">
                                                 <input type="text" name="border" id="modal-border" class="form-control" placeholder="Border color">
                                             </div>
                                         </div>
 
 
-                                        <div class="form-group col-md-12 row">
+                                        <div class="form-group col-12 col-lg-6 row">
                                             <div class="col-2">
                                                 <label class="labelpopup"> size</label>
                                             </div>
-                                            <div class="col-9">
+                                            <div class="col-10">
                                                 <input type="text" name="size" id="modal-size" class="form-control" placeholder="size">
-                                               
+
                                             </div>
                                         </div>
 
-                                        <div class="form-group col-md-12 row">
+                                    </div>
+
+                                    <div class="row ">
+                                        <div class="form-group col-12 col-lg-6 row">
                                             <div class="col-2">
                                                 <label class="labelpopup"> Logo</label>
                                             </div>
-                                            <div class="col-9">
-                                                <select  id="modal-logo">
-                                                    
+                                            <div class="col-10">
+                                                <select id="modal-logo">
+
                                                     <option selected id="print">Print</option>
                                                     <option id="undercover">Undercover</option>
                                                 </select>
@@ -376,31 +386,44 @@
                                         </div>
 
 
-                                        <div class="form-group col-md-12 row">
+                                        <div class="form-group col-12 col-lg-6 row">
                                             <div class="col-2">
                                                 <label class="labelpopup"> Type</label>
                                             </div>
-                                            <div class="col-9">
+                                            <div class="col-10">
                                                 <input type="text" name="typep" id="modal-typep" class="form-control" placeholder="type">
-                                               
+
                                             </div>
 
-                                            
+
                                         </div>
-                                        <div class="form-group col-12 text-center mb-0">
-                                            <button type="button" class="vs-btn wave-style1">Next<i class="far fa-arrow-right"></i></button>
+                                    </div>
+                                    <div class="row d-flex justify-content-center ">
+                                        <div class="form-group col-12 col-lg-6 row ">
+                                            <div class="col-3">
+                                                <label class="labelpopup"> Quantite</label>
+                                            </div>
+                                            <div class="col-9">
+                                                <input type="number" name="qtep" id="modal-qtep" class="form-control" value="1">
+
+                                            </div>
+
+
                                         </div>
-                                        <span class="form-messages mt-20 text-center"></span>
+                                    </div>
+                                   
+                                
+                                    <div class="modal-footer d-flex justify-content-center" style="border-top:none">
+                                        <button type="button" class="vs-btn wave-style1">Autre Commande<i class="far fa-arrow-right"></i></button>
+                                        <button type="button" class="vs-btn wave-style1">Valider Commande<i class="far fa-arrow-right"></i></button>
+
                                     </div>
                                 </form>
                             </div>
                         </div>
                     </section>
                 </div>
-                <div class="modal-footer">
-                    
-                    <button type="button" class="vs-btn wave-style1">Confirm<i class="far fa-arrow-right"></i></button>
-                </div>
+                
             </div>
         </div>
     </div>
@@ -484,134 +507,136 @@
     </section>
 </div>
 <script type="text/javascript">
-   $(document).ready(function(){
-    //declaration des variables
-    let color="";
-    let bordercolor="";
-    let sizeproduct="";
-    let typeproduct="";
-    let logo="a";
-    let tissue="";
-    //end declaration
-   
-    //mobile version
-    if (window.matchMedia("(min-width: 992px)").matches) {
-   $("#featuremobile").hide();
-  } else {
-   $("#feature").hide();
-    }
-    //end mobile version
+    $(document).ready(function () {
+        //declaration des variables
+        let color = "";
+        let bordercolor = "";
+        let sizeproduct = "";
+        let typeproduct = "";
+        let logo = "a";
+        let tissue = "";
+        //end declaration
 
-    //hide all subfilters and errors
-    $('.subfilters').hide();
-    $('#error1').hide();
-    $('#blah').hide();
-    //end hide all subliters
+        //mobile version
+        if (window.matchMedia("(min-width: 992px)").matches) {
+            $("#featuremobile").hide();
+        } else {
+            $("#feature").hide();
+        }
+        //end mobile version
 
-    //logo upload
-     $('.btnfile').on('click', function() {
-    $('.file').trigger('click');
-  });
-
-  $('.file').on('change', function() {
-    var fileName = $(this)[0].files[0].name;    
-    $('#file-name').val(fileName);
-  });
-
-
-  
-    //end logo upload
-
-
-    //fiters click
-    $('.feature-title').on('click',function(){
+        //hide all subfilters and errors
         $('.subfilters').hide();
+        $('#error1').hide();
+        $('#blah').hide();
+        //end hide all subliters
 
-        if(this.id=='filtre1' || this.id=='filtre1mb'){
-            $('#subfiltre-color').show();
-            $('.imgperso').attr('src','../Content/assets/img/products/8F7A9059.jpg');
+        //logo upload
+        $('.btnfile').on('click', function () {
+            $('.file').trigger('click');
+        });
 
-        }
-
-     if(this.id=='filtre2' || this.id=='filtre2mb'){
-    $('#subfiltre-tissue').show();
-$('.imgperso').attr('src','../Content/assets/img/products/8F7A9020.jpg');
-        }
-
-     if(this.id=='filtre3' || this.id=='filtre3mb'){
-    $('#subfiltre-border').show();
-  $('.imgperso').attr('src','../Content/assets/img/products/8F7A9059.jpg');
-        }
-
-     if(this.id=='filtre4' || this.id=='filtre4mb'){
-    $('#subfiltre-size').show();
-$('.imgperso').attr('src','../Content/assets/img/products/8F7A9020.jpg');
-        }
+        $('.file').on('change', function () {
+            var fileName = $(this)[0].files[0].name;
+            $('#file-name').val(fileName);
+        });
 
 
-    if(this.id=='filtre5' || this.id=='filtre5mb'){
-    $('#subfiltre-logo').show();
-$('.imgperso').attr('src','../Content/assets/img/products/8F7A9020.jpg');
-        }
 
-    if(this.id=='filtre6' || this.id=='filtre6mb'){
-    $('#subfiltre-type').show();
-$('.imgperso').attr('src','../Content/assets/img/products/8F7A9019.jpg');
-        }
-
-    });
-
-    //end filters 
-
-    //subfilters
-    $('.subfiltre-select').on('change', function() {
-    
-    color="";
-     bordercolor="";
-     sizeproduct="";
-     typeproduct="";
-     logo="a";
-     tissue="";
-
-        if($("#subfiltre-color-select option:selected").index()>0) 
-        color=$('#subfiltre-color-select').val();
-
-     if($("#subfiltre-border-select option:selected").index()>0) 
-         bordercolor=$('#subfiltre-border-select').val();
-
-     if($("#subfiltre-size-select option:selected").index()>0) 
-         sizeproduct=$('#subfiltre-size-select').val();
-
-     if($("#subfiltre-type-select option:selected").index()>0) 
-         typeproduct=$('#subfiltre-type-select').val();
-
-     //if($("#subfiltre-color-select option:selected").index()>0) 
-         //logo=$('#subfiltre-logo-select').val();
-
-     if($("#subfiltre-tissue-select option:selected").index()>0) 
-         tissue=$('#subfiltre-tissue-select').val();
+        //end logo upload
 
 
-    });
-    //end subfilters
+        //fiters click
+        $('.feature-title').on('click', function () {
+            $('.subfilters').hide();
 
-    $("#confirmer").on('click',function(){
-   
-    if(color=="" || bordercolor=="" || sizeproduct=="" || typeproduct=="" || logo=="" || tissue==""){
-     $('#error1').show();
-    
-       
-    }else{
-    $('#error1').hide();
-     $('#exampleModal').modal('show');
-    $('#modal-color').val(color);
-    $('#modal-border').val(bordercolor);
-    $('#modal-size').val(sizeproduct);
-    $('#modal-typep').val(typeproduct);
-    $('#modal-tissue').val(tissue);
-    }
+            if (this.id == 'filtre1' || this.id == 'filtre1mb') {
+                $('#subfiltre-color').show();
+                $('.imgperso').attr('src', '../Content/assets/img/products/8F7A9059.jpg');
 
-    });
+            }
+
+            if (this.id == 'filtre2' || this.id == 'filtre2mb') {
+                $('#subfiltre-tissue').show();
+                $('.imgperso').attr('src', '../Content/assets/img/products/8F7A9020.jpg');
+            }
+
+            if (this.id == 'filtre3' || this.id == 'filtre3mb') {
+                $('#subfiltre-border').show();
+                $('.imgperso').attr('src', '../Content/assets/img/products/8F7A9059.jpg');
+            }
+
+            if (this.id == 'filtre4' || this.id == 'filtre4mb') {
+                $('#subfiltre-size').show();
+                $('.imgperso').attr('src', '../Content/assets/img/products/8F7A9020.jpg');
+            }
+
+
+            if (this.id == 'filtre5' || this.id == 'filtre5mb') {
+                $('#subfiltre-logo').show();
+                $('.imgperso').attr('src', '../Content/assets/img/products/8F7A9020.jpg');
+            }
+
+            if (this.id == 'filtre6' || this.id == 'filtre6mb') {
+                $('#subfiltre-type').show();
+                $('.imgperso').attr('src', '../Content/assets/img/products/8F7A9019.jpg');
+            }
+
+        });
+
+        //end filters
+
+        //subfilters
+        $('.subfiltre-select').on('change', function () {
+
+            color = "";
+            bordercolor = "";
+            sizeproduct = "";
+            typeproduct = "";
+            logo = "a";
+            tissue = "";
+
+            if ($("#subfiltre-color-select option:selected").index() > 0)
+                color = $('#subfiltre-color-select').val();
+
+            if ($("#subfiltre-border-select option:selected").index() > 0)
+                bordercolor = $('#subfiltre-border-select').val();
+
+            if ($("#subfiltre-size-select option:selected").index() > 0)
+                sizeproduct = $('#subfiltre-size-select').val();
+
+            if ($("#subfiltre-type-select option:selected").index() > 0)
+                typeproduct = $('#subfiltre-type-select').val();
+
+            //if($("#subfiltre-color-select option:selected").index()>0)
+            //logo=$('#subfiltre-logo-select').val();
+
+            if ($("#subfiltre-tissue-select option:selected").index() > 0)
+                tissue = $('#subfiltre-tissue-select').val();
+
+
+        });
+        //end subfilters
+
+        $("#confirmer").on('click', function () {
+
+            /*if(color=="" || bordercolor=="" || sizeproduct=="" || typeproduct=="" || logo=="" || tissue==""){
+             $('#error1').show();
+
+
+            }else
+            */
+            {
+                $('#error1').hide();
+                $('#exampleModal').modal('show');
+                $('#modal-color').val(color);
+                $('#modal-border').val(bordercolor);
+                $('#modal-size').val(sizeproduct);
+                $('#modal-typep').val(typeproduct);
+                $('#modal-tissue').val(tissue);
+            }
+
+        });
 
     });
 

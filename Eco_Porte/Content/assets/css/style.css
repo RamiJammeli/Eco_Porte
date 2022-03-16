@@ -94,7 +94,7 @@ Version: 1.0
     --error-color: #dc3545;
     --border-color: rgba(0,0,0,0.10);
     --theme-font1: 'Montserrat';
-    --theme-font2: 'lato';
+    --theme-font2: 'Open Sans', sans-serif;
     --icon-font: 'Font Awesome 5 Pro';
     --icon-font2: 'Flaticon';
     --moving-ani-duration: 5s;
@@ -112,7 +112,7 @@ Version: 1.0
 ==================================*/
 body {
   font-family: var(--theme-font1);
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 400;
   color: var(--body-color);
   line-height: 26px;
@@ -6385,7 +6385,7 @@ blockquote.has-text-align-right:after {
 }
 
 #feature .container .inner-wrapper .row .col-3 .fadeInUp .media-body h3{
-    color: darkgrey;
+    color: white;
     margin-top:10px;
 }
 
