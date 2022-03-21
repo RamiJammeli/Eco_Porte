@@ -40,8 +40,11 @@ namespace Eco_Porte.Controllers
        
 
             #region
-            Produit closedslipper = new Produit(1, "slipper", "closed", "15.jpg", Slippers);
+            Produit closedslipper = new Produit(1, "slipper", "By far our most popular item. We pay great attention to our game-changers atEcoporté because we feel they contribute to the degree of comfort for your guests and enrich their stay experience. <br/> Our slippers, whether closed or open - toed, offer a distinctive touch to your institution and even more originality with our \"customization\" option, which allows you to pu your own unique touch on them.", "15.jpg", Slippers);
             Produit openedslipper = new Produit(2, "open-toed slipper", "open-toed <br/> aa", "1.jpg", Slippers);
+            Produit openedslipper2 = new Produit(14, "open-toed slipper", "open-toed <br/> aa", "16.jpg", Slippers);
+            Produit openedslipper3 = new Produit(15, "open-toed slipper", "open-toed <br/> aa", "17.jpg", Slippers);
+            Produit openedslipper4 = new Produit(16, "open-toed slipper", "open-toed <br/> aa", "18.jpg", Slippers);
 
             Produit dentalbrush = new Produit(3, "dental brush", "a unique utilization", "2jpg", Hygienekit);
             Produit shavingrazor = new Produit(4, "shaving razor", "a unique utilization", "3.jpg", Hygienekit);
@@ -54,7 +57,7 @@ namespace Eco_Porte.Controllers
             Produit nailfile = new Produit(13, "nail file", "a unique utilization", "4.jpg", Vanitysets);
 
 
-            Slippers.Produits = new List<Produit>() { closedslipper, openedslipper };
+            Slippers.Produits = new List<Produit>() { closedslipper, openedslipper, openedslipper2, openedslipper3, openedslipper4 };
             Hygienekit.Produits = new List<Produit>() { dentalbrush, shavingrazor, haircomb };
             sewingset.Produits = new List<Produit>() { sewingsett};
             Vanitysets.Produits=new List<Produit>() { earsticks, cottonpads, nailfile };
