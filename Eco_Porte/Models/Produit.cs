@@ -28,4 +28,38 @@ namespace Eco_Porte.Models
            
         }
     }
+
+
+    public class commantaires
+    {
+        private int id;
+        private int publication_id;
+        private string contenu;
+        private DateTime date_commentaire;
+    }
+
+    public class joueurs
+    {
+        private int id;
+        private int equipes_id;
+        private string nom;
+        private string prenom;
+        private string email;
+        private int numero;
+        private int nbr_partie_jouer;
+
+    }
+
+    public class equipes
+    {
+        private int id;
+        private int matchs_id;
+        private string nom;
+        private int nbr_vic;
+        private int nbr_per;
+        private int nbr_null;
+        private int suspension;
+
+
+    }
 }
